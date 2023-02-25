@@ -1,0 +1,26 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* :root {
+  --color-00: #002b36;
+  --color-01: #073642;
+  --color-02: #008080;
+  --color-03: #3182a4;
+  --color-04: #cb4b16;
+  --color-05: #9c36b6;
+  --color-06: #859900;
+  --color-07: #eee8d5;
+  --color-08: #93a1a1;
+  --color-09: #268bd2;
+  --color-10: #4fb636;
+  --color-11: #2aa198;
+  --color-12: #dc322f;
+  --color-13: #d33682;
+  --color-14: #b58900;
+  --color-15: #fdf6e3;
+  --font-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+} */
