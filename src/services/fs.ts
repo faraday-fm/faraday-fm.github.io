@@ -19,11 +19,11 @@ function createManyFiles(count: number) {
 }
 
 function dir(fs: FileSystemProvider, name: string) {
-  fs.createDirectory(new URL("far-more:" + name));
+  fs.createDirectory("far-more:" + name);
 }
 
 function file(fs: FileSystemProvider, name: string, content: string) {
-  fs.writeFile(new URL("far-more:" + name), encoder.encode(content), {
+  fs.writeFile("far-more:" + name, encoder.encode(content), {
     create: true,
     overwrite: false,
   });
