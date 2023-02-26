@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@faker-js/faker': ^7.6.0
-  '@far-more/web-ui': ^1.7.3
+  '@far-more/web-ui': ^1.7.4
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.1.0
@@ -14,7 +14,7 @@ specifiers:
 
 dependencies:
   '@faker-js/faker': 7.6.0
-  '@far-more/web-ui': 1.7.3_3xleytyzprlgycb2ded54tx72i
+  '@far-more/web-ui': 1.7.4_3xleytyzprlgycb2ded54tx72i
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
@@ -349,8 +349,8 @@ packages:
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
-  /@far-more/web-ui/1.7.3_3xleytyzprlgycb2ded54tx72i:
-    resolution: {integrity: sha512-q5LqudIPH7Xf/okWELr1uEYkYjMoGxVnS1Scspw2h8kYbr4or7xtW0bSSnb7CXoAZNu1o7NLp23eJOj0VBu8bQ==}
+  /@far-more/web-ui/1.7.4_3xleytyzprlgycb2ded54tx72i:
+    resolution: {integrity: sha512-FOnSXYGGxoJQvpR4PHaNPGr3fVE7axE8ExBSQlsBYFG1jVexLYeKe7/+CL37kQzQSY4cnpXh5QRuARX+wpto2A==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
