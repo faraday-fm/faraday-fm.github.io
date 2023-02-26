@@ -53,6 +53,16 @@ export function buildDemoFs(fs: FileSystemProvider) {
   createManyFiles(1000).forEach((fn) =>
     file(fs, "/far-more.app/Many Files/" + fn, randomContent())
   );
+  dir(fs, "/far-more.app/UTF files");
+  file(fs, "/far-more.app/UTF files/🍣🍺", "🍣🍺");
+  file(fs, "/far-more.app/UTF files/中国人", "中国人");
+  file(fs, "/far-more.app/UTF files/יידיש", "יידיש");
+  file(fs, "/far-more.app/UTF files/Русский", "Русский");
+  file(fs, "/far-more.app/UTF files/Français", "Français");
+  file(fs, "/far-more.app/UTF files/عرب", "عرب");
+  file(fs, "/far-more.app/UTF files/แบบไทย", "แบบไทย");
+  file(fs, "/far-more.app/UTF files/asd\nfgh", "asd\nfgh");
+  file(fs, "/far-more.app/UTF files/asd\\fgh", "asd\\fgh");
 }
 function randomContent(): string {
   const lines = (1 + Math.random() * 20) | 0;

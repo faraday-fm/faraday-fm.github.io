@@ -25,7 +25,7 @@
             {
               id: "panel3",
               type: "file-panel",
-              path: "file:/",
+              path: "file:///",
               view: {
                 type: "condensed",
                 columnDef: { field: "name", name: "Name" },
@@ -35,7 +35,7 @@
             {
               id: "panel4",
               type: "file-panel",
-              path: "far-more://",
+              path: "far-more:/",
               view: {
                 type: "condensed",
                 columnDef: { field: "name", name: "Name" },
@@ -54,8 +54,8 @@
           id: "panel1",
           type: "quick-view",
           flex: 1.6,
-          path: "far-more://layout.json",
-          // path: "file:/far-more.app/README.md",
+          path: "far-more:/layout.json",
+          // path: "file:///far-more.app/README.md",
         },
       ],
     },
