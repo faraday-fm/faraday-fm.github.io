@@ -1,5 +1,5 @@
 import { FileSystemProvider, InMemoryFsProvider } from "@far-more/web-ui";
-import { faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker/locale/en";
 import layout from "./far-more/layout.json5?raw";
 import settings from "./far-more/settings.json5?raw";
 
@@ -64,8 +64,9 @@ export function buildDemoFs() {
   file(fs, "/far-more.app/UTF files/Français", "Français");
   file(fs, "/far-more.app/UTF files/عرب", "عرب");
   file(fs, "/far-more.app/UTF files/แบบไทย", "แบบไทย");
-  file(fs, "/far-more.app/UTF files/asd\nfgh", "asd\nfgh");
-  file(fs, "/far-more.app/UTF files/asd\\fgh", "asd\\fgh");
+  file(fs, "/far-more.app/UTF files/asd\r\nfgh", "asd\r\nfgh");
+  dir(fs, "/far-more.app/UTF files/S\\p;e\:c\'i\"al dir");
+  file(fs, "/far-more.app/UTF files/S\\p;e\:c\'i\"al dir/back\\slash file", "back\\slash file");
   return fs;
 }
 

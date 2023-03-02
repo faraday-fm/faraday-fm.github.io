@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@faker-js/faker': ^7.6.0
-  '@far-more/web-ui': ^1.9.0
+  '@far-more/web-ui': ^1.9.1
   '@monaco-editor/react': ^4.4.6
-  '@types/node': ^18.14.3
+  '@types/node': ^18.14.4
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@vitejs/plugin-react': ^2.2.0
@@ -17,7 +17,7 @@ specifiers:
 
 dependencies:
   '@faker-js/faker': 7.6.0
-  '@far-more/web-ui': 1.9.0_wkgbi54btsxvo5wjc3crn6xe3i
+  '@far-more/web-ui': 1.9.1_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -25,12 +25,12 @@ dependencies:
   styled-components: 5.3.8_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@types/node': 18.14.3
+  '@types/node': 18.14.4
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 2.2.0_vite@3.2.5
   typescript: 4.9.5
-  vite: 3.2.5_@types+node@18.14.3
+  vite: 3.2.5_@types+node@18.14.4
 
 packages:
 
@@ -355,8 +355,8 @@ packages:
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
-  /@far-more/web-ui/1.9.0_wkgbi54btsxvo5wjc3crn6xe3i:
-    resolution: {integrity: sha512-3atNR5GkATRV7bvUNOEU8HYgH3qdDGkOb3ybAnpJrCyLFadfu41AA+Ohz/pTG59wdrdec1TzyRSn8K4UxG+a2w==}
+  /@far-more/web-ui/1.9.1_wkgbi54btsxvo5wjc3crn6xe3i:
+    resolution: {integrity: sha512-HrnSE561B8Rjz/esR+68uebhhmp2YfAAP4/Xf6kTyKowPOOQ8qOetKzutGt6/aDdz1oIps2NVUGceVCUdRlOdA==}
     peerDependencies:
       '@monaco-editor/react': ^4.4.6
       react: '>=18'
@@ -502,8 +502,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.14.3:
-    resolution: {integrity: sha512-1y36CC5iL5CMyKALzwX9cwwxcWIxvIBe3gzs4GrXWXEQ8klQnCZ2U/WDGiNrXHmQcUhnaun17XG9TEIDlGj2RA==}
+  /@types/node/18.14.4:
+    resolution: {integrity: sha512-VhCw7I7qO2X49+jaKcAUwi3rR+hbxT5VcYF493+Z5kMLI0DL568b7JI4IDJaxWFH0D/xwmGJNoXisyX+w7GH/g==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -545,7 +545,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.21.0
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.2.5_@types+node@18.14.3
+      vite: 3.2.5_@types+node@18.14.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1897,7 +1897,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite/3.2.5_@types+node@18.14.3:
+  /vite/3.2.5_@types+node@18.14.4:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1922,7 +1922,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.14.3
+      '@types/node': 18.14.4
       esbuild: 0.15.18
       postcss: 8.4.21
       resolve: 1.22.1
