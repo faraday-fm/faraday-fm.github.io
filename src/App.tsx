@@ -1,10 +1,8 @@
-import { createInMemoryFs, FarMore, FarMoreHost } from "@far-more/web-ui";
+import { FarMore, FarMoreHost } from "@far-more/web-ui";
 import { buildDemoFs, buildFarMoreFs } from "./services/fs";
 
-const farMoreFs = createInMemoryFs();
-const demoFs = createInMemoryFs();
-buildFarMoreFs(farMoreFs);
-buildDemoFs(demoFs);
+const farMoreFs = buildFarMoreFs();
+const demoFs = buildDemoFs();
 
 const host: FarMoreHost = {
   config: {

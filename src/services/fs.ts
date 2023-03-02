@@ -1,4 +1,4 @@
-import { createInMemoryFs, FileSystemProvider } from "@far-more/web-ui";
+import { FileSystemProvider, InMemoryFsProvider } from "@far-more/web-ui";
 import { faker } from "@faker-js/faker";
 import layout from "./far-more/layout.json5?raw";
 import settings from "./far-more/settings.json5?raw";
@@ -29,12 +29,15 @@ function file(fs: FileSystemProvider, name: string, content: string) {
   });
 }
 
-export function buildFarMoreFs(fs: FileSystemProvider) {
+export function buildFarMoreFs() {
+  const fs = new InMemoryFsProvider();
   file(fs, "/layout.json", layout);
   file(fs, "/settings.json", settings);
+  return fs;
 }
 
-export function buildDemoFs(fs: FileSystemProvider) {
+export function buildDemoFs() {
+  const fs = new InMemoryFsProvider();
   dir(fs, "/far-more.app");
   file(fs, "/far-more.app/README.md", "123456789");
   dir(fs, "/far-more.app/Releases");
@@ -63,7 +66,9 @@ export function buildDemoFs(fs: FileSystemProvider) {
   file(fs, "/far-more.app/UTF files/แบบไทย", "แบบไทย");
   file(fs, "/far-more.app/UTF files/asd\nfgh", "asd\nfgh");
   file(fs, "/far-more.app/UTF files/asd\\fgh", "asd\\fgh");
+  return fs;
 }
+
 function randomContent(): string {
   const lines = (1 + Math.random() * 20) | 0;
   let content = faker.lorem.lines(lines);
