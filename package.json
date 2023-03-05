@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
-    "@far-more/web-ui": "^1.10.3",
+    "@far-more/web-ui": "^1.10.10",
     "@monaco-editor/react": "^4.4.6",
     "monaco-editor": "^0.36.1",
     "react": "^18.2.0",

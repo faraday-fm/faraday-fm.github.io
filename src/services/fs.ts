@@ -19,11 +19,11 @@ function createManyFiles(count: number) {
 }
 
 function dir(fs: FileSystemProvider, name: string) {
-  fs.createDirectory("far-more:" + name);
+  fs.createDirectory(name);
 }
 
 function file(fs: FileSystemProvider, name: string, content: string) {
-  fs.writeFile("far-more:" + name, encoder.encode(content), {
+  fs.writeFile(name, encoder.encode(content), {
     create: true,
     overwrite: false,
   });
@@ -31,42 +31,42 @@ function file(fs: FileSystemProvider, name: string, content: string) {
 
 export function buildFarMoreFs() {
   const fs = new InMemoryFsProvider();
-  file(fs, "/layout.json", layout);
-  file(fs, "/settings.json", settings);
+  file(fs, "layout.json", layout);
+  file(fs, "settings.json", settings);
   return fs;
 }
 
 export function buildDemoFs() {
   const fs = new InMemoryFsProvider();
-  dir(fs, "/far-more.app");
-  file(fs, "/far-more.app/README.md", "123456789");
-  dir(fs, "/far-more.app/Releases");
-  dir(fs, "/far-more.app/Releases/Windows");
-  dir(fs, "/far-more.app/Releases/Windows/Stable");
-  file(fs, "/far-more.app/Releases/Windows/Stable/far-more-1.0.exe", "123");
-  dir(fs, "/far-more.app/Releases/Mac OS");
-  dir(fs, "/far-more.app/Releases/Mac OS/Stable");
-  file(fs, "/far-more.app/Releases/Mac OS/Stable/far-more-1.0.pkg", "123");
-  dir(fs, "/far-more.app/Releases/Linux");
-  dir(fs, "/far-more.app/Releases/Linux/Stable");
-  file(fs, "/far-more.app/Releases/Linux/Stable/far-more-1.0.deb", "123");
-  dir(fs, "/far-more.app/News");
-  file(fs, "/far-more.app/News/2023-02-01.md", "123");
-  dir(fs, "/far-more.app/Many Files");
+  dir(fs, "far-more.app");
+  file(fs, "far-more.app/README.md", "123456789");
+  dir(fs, "far-more.app/Releases");
+  dir(fs, "far-more.app/Releases/Windows");
+  dir(fs, "far-more.app/Releases/Windows/Stable");
+  file(fs, "far-more.app/Releases/Windows/Stable/far-more-1.0.exe", "123");
+  dir(fs, "far-more.app/Releases/Mac OS");
+  dir(fs, "far-more.app/Releases/Mac OS/Stable");
+  file(fs, "far-more.app/Releases/Mac OS/Stable/far-more-1.0.pkg", "123");
+  dir(fs, "far-more.app/Releases/Linux");
+  dir(fs, "far-more.app/Releases/Linux/Stable");
+  file(fs, "far-more.app/Releases/Linux/Stable/far-more-1.0.deb", "123");
+  dir(fs, "far-more.app/News");
+  file(fs, "far-more.app/News/2023-02-01.md", "123");
+  dir(fs, "far-more.app/Many Files");
   createManyFiles(1000).forEach((fn) =>
-    file(fs, "/far-more.app/Many Files/" + fn, randomContent())
+    file(fs, "far-more.app/Many Files/" + fn, randomContent())
   );
-  dir(fs, "/far-more.app/UTF files");
-  file(fs, "/far-more.app/UTF files/🍣🍺", "🍣🍺");
-  file(fs, "/far-more.app/UTF files/中国人", "中国人");
-  file(fs, "/far-more.app/UTF files/יידיש", "יידיש");
-  file(fs, "/far-more.app/UTF files/Русский", "Русский");
-  file(fs, "/far-more.app/UTF files/Français", "Français");
-  file(fs, "/far-more.app/UTF files/عرب", "عرب");
-  file(fs, "/far-more.app/UTF files/แบบไทย", "แบบไทย");
-  file(fs, "/far-more.app/UTF files/asd\r\nfgh", "asd\r\nfgh");
-  dir(fs, "/far-more.app/UTF files/S\\p;e\:c\'i\"al dir");
-  file(fs, "/far-more.app/UTF files/S\\p;e\:c\'i\"al dir/back\\slash file", "back\\slash file");
+  dir(fs, "far-more.app/UTF files");
+  file(fs, "far-more.app/UTF files/🍣🍺", "🍣🍺");
+  file(fs, "far-more.app/UTF files/中国人", "中国人");
+  file(fs, "far-more.app/UTF files/יידיש", "יידיש");
+  file(fs, "far-more.app/UTF files/Русский", "Русский");
+  file(fs, "far-more.app/UTF files/Français", "Français");
+  file(fs, "far-more.app/UTF files/عرب", "عرب");
+  file(fs, "far-more.app/UTF files/แบบไทย", "แบบไทย");
+  file(fs, "far-more.app/UTF files/asd\r\nfgh", "asd\r\nfgh");
+  dir(fs, "far-more.app/UTF files/S\\p;e\:c\'i\"al dir");
+  file(fs, "far-more.app/UTF files/S\\p;e\:c\'i\"al dir/back\\slash file", "back\\slash file");
   return fs;
 }
 

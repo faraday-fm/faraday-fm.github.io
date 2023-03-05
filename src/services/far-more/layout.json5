@@ -11,7 +11,7 @@
           id: "panel2",
           type: "file-panel",
           flex: 1.6,
-          path: "file:///far-more.app/Many Files/",
+          path: "file:///far-more.app/Many Files",
           view: {
             type: "condensed",
             columnDef: { field: "name", name: "Name" },
