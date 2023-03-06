@@ -13,22 +13,21 @@ export class WebFs implements FileSystemProvider {
   async watch(
     path: string,
     watcher: FileSystemWatcher,
-    options?:
-      | {
-          recursive?: boolean | undefined;
-          excludes?: string[] | undefined;
-          signal?: AbortSignal | undefined;
-        }
-      | undefined
+    options?: {
+      recursive?: boolean;
+      excludes?: string[];
+      signal?: AbortSignal;
+    }
   ): Promise<void> {
     const entries = await this.readDirectory(path);
+    options?.signal?.throwIfAborted();
     entries.forEach((e) =>
       watcher([{ type: "created", path: path + "/" + e.name, entry: e }])
     );
   }
   readDirectory(
     path: string,
-    options?: { signal?: AbortSignal | undefined } | undefined
+    options?: { signal?: AbortSignal }
   ): FsEntry[] | Promise<FsEntry[]> {
     let resolve: (val: FsEntry[]) => void;
     let reject: (reason?: any) => void;
@@ -38,14 +37,18 @@ export class WebFs implements FileSystemProvider {
     const listDir = (dir: FileSystemEntry) => {
       if (dir.isDirectory) {
         (dir as FileSystemDirectoryEntry).createReader().readEntries(
-          (entries) =>
+          (entries) => {
+            if (options?.signal?.aborted) {
+              reject(options.signal.reason);
+            }
             resolve(
               entries.map((e) => ({
                 name: e.name,
                 isFile: e.isFile,
                 isDir: e.isDirectory,
               }))
-            ),
+            );
+          },
           (error) => reject(error)
         );
       }
@@ -57,20 +60,25 @@ export class WebFs implements FileSystemProvider {
     this.root.getDirectory(
       "/" + this.root.name + "/" + path,
       undefined,
-      (success) => listDir(success),
+      (success) => {
+        if (options?.signal?.aborted) {
+          reject(options.signal.reason);
+        }
+        listDir(success);
+      },
       (error) => reject(error)
     );
     return result;
   }
   createDirectory(
     path: string,
-    options?: { signal?: AbortSignal | undefined } | undefined
+    options?: { signal?: AbortSignal }
   ): void | Promise<void> {
     throw new Error("Method not implemented.");
   }
   readFile(
     path: string,
-    options?: { signal?: AbortSignal | undefined } | undefined
+    options?: { signal?: AbortSignal }
   ): Promise<Uint8Array> {
     let resolve: (val: Uint8Array) => void;
     let reject: (reason?: any) => void;
@@ -83,7 +91,16 @@ export class WebFs implements FileSystemProvider {
       undefined,
       (fileEntry) => {
         (fileEntry as FileSystemFileEntry).file(
-          (file) => file.arrayBuffer().then((ab) => resolve(new Uint8Array(ab))),
+          async (file) => {
+            try {
+              options?.signal?.throwIfAborted();
+              const buffer = await file.arrayBuffer();
+              options?.signal?.throwIfAborted();
+              resolve(new Uint8Array(buffer));
+            } catch (err) {
+              reject(err);
+            }
+          },
           (error) => reject(error)
         );
       },
@@ -94,39 +111,31 @@ export class WebFs implements FileSystemProvider {
   writeFile(
     path: string,
     content: Uint8Array,
-    options?:
-      | {
-          create?: boolean | undefined;
-          overwrite?: boolean | undefined;
-          signal?: AbortSignal | undefined;
-        }
-      | undefined
+    options?: {
+      create?: boolean;
+      overwrite?: boolean;
+      signal?: AbortSignal;
+    }
   ): void | Promise<void> {
     throw new Error("Method not implemented.");
   }
   delete(
     path: string,
-    options?:
-      | { recursive?: boolean | undefined; signal?: AbortSignal | undefined }
-      | undefined
+    options?: { recursive?: boolean; signal?: AbortSignal }
   ): void | Promise<void> {
     throw new Error("Method not implemented.");
   }
   rename(
     oldPath: string,
     newPath: string,
-    options?:
-      | { overwrite?: boolean | undefined; signal?: AbortSignal | undefined }
-      | undefined
+    options?: { overwrite?: boolean; signal?: AbortSignal }
   ): void | Promise<void> {
     throw new Error("Method not implemented.");
   }
   copy?(
     source: string,
     destination: string,
-    options?:
-      | { overwrite?: boolean | undefined; signal?: AbortSignal | undefined }
-      | undefined
+    options?: { overwrite?: boolean; signal?: AbortSignal }
   ): void | Promise<void> {
     throw new Error("Method not implemented.");
   }

@@ -31,8 +31,8 @@ function file(fs: FileSystemProvider, name: string, content: string) {
 
 export function buildFarMoreFs() {
   const fs = new InMemoryFsProvider();
-  file(fs, "layout.json", layout);
-  file(fs, "settings.json", settings);
+  file(fs, "layout.json5", layout);
+  file(fs, "settings.json5", settings);
   return fs;
 }
 
