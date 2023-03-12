@@ -17,8 +17,9 @@ jobs:
           version: latest
 
       - name: Install and Build 🔧
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
+      - run: |
+          pnpm install --frozen-lockfile
+          pnpm build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
