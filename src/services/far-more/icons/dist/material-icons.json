@@ -20,12 +20,23 @@
     },
     "audio": {
       "iconPath": "./../icons/audio.svg"
+    },
+    "exe": {
+      "iconPath": "./../icons/exe.svg"
+    },
+    "markdown": {
+      "iconPath": "./../icons/markdown.svg"
+    },
+    "json": {
+      "iconPath": "./../icons/json.svg"
     }
   },
   "folderNames": {
   },
   "fileExtensions": {
     "htm": "html",
+    "html": "html",
+    "shtml": "html",
     "xhtml": "html",
     "html_vm": "html",
     "asp": "html",
@@ -110,7 +121,11 @@
     "m4a": "audio",
     "wma": "audio",
     "aiff": "audio",
-    "wav": "audio"
+    "wav": "audio",
+    "exe": "exe",
+    "md": "markdown",
+    "json": "json",
+    "json5": "json"
   },
   "options": {
     "folders": {

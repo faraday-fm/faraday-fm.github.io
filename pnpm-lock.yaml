@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@faker-js/faker': ^7.6.0
-  '@far-more/web-ui': ^1.11.2
+  '@far-more/web-ui': ^1.11.3
   '@monaco-editor/react': ^4.4.6
-  '@types/node': ^18.14.6
+  '@types/node': ^18.15.1
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@vitejs/plugin-react': ^2.2.0
@@ -17,7 +17,7 @@ specifiers:
 
 dependencies:
   '@faker-js/faker': 7.6.0
-  '@far-more/web-ui': 1.11.2_wkgbi54btsxvo5wjc3crn6xe3i
+  '@far-more/web-ui': 1.11.3_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -25,12 +25,12 @@ dependencies:
   styled-components: 5.3.8_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@types/node': 18.14.6
+  '@types/node': 18.15.1
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 2.2.0_vite@3.2.5
   typescript: 4.9.5
-  vite: 3.2.5_@types+node@18.14.6
+  vite: 3.2.5_@types+node@18.15.1
 
 packages:
 
@@ -355,8 +355,8 @@ packages:
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
-  /@far-more/web-ui/1.11.2_wkgbi54btsxvo5wjc3crn6xe3i:
-    resolution: {integrity: sha512-EfYVu4jNh1cYOgBgHUvUR4nUCV4hFuxQYaIfrrYwr4jCZON5uhfpGrMIFHme5458hrz+RgbXzVfRLrt8zbN7+g==}
+  /@far-more/web-ui/1.11.3_wkgbi54btsxvo5wjc3crn6xe3i:
+    resolution: {integrity: sha512-2Hm5Sbv1dtWvbQH82+HKBvg5tYSFG42jvuXRHsY7wSAjL6SQQmpsPApH5zNoEHhXAoFfgxBpaldJFyjroGeCKg==}
     peerDependencies:
       '@monaco-editor/react': ^4.4.6
       react: '>=18'
@@ -366,7 +366,7 @@ packages:
       '@reduxjs/toolkit': 1.9.3_k4ae6lp43ej6mezo3ztvx6pykq
       ansi-colors: 4.1.3
       deepmerge: 4.3.0
-      focus-trap-react: 10.1.0_biqbaboplfbrettd7655fr4n2y
+      focus-trap-react: 10.1.1_biqbaboplfbrettd7655fr4n2y
       is-promise: 4.0.0
       json5: 2.2.3
       linq: 4.0.1
@@ -504,8 +504,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.14.6:
-    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+  /@types/node/18.15.1:
+    resolution: {integrity: sha512-U2TWca8AeHSmbpi314QBESRk7oPjSZjDsR+c+H4ECC1l+kFgpZf8Ydhv3SJpPy51VyZHHqxlb6mTTqYNNRVAIw==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -547,7 +547,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.21.0
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.2.5_@types+node@18.14.6
+      vite: 3.2.5_@types+node@18.15.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -589,8 +589,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001460
-      electron-to-chromium: 1.4.320
+      caniuse-lite: 1.0.30001465
+      electron-to-chromium: 1.4.328
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -599,8 +599,8 @@ packages:
     resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
     dev: false
 
-  /caniuse-lite/1.0.30001460:
-    resolution: {integrity: sha512-Bud7abqjvEjipUkpLs4D7gR0l8hBYBHoa+tGtKJHvT2AYzLp1z7EmVkUT4ERpVUfca8S2HGIVs883D8pUH1ZzQ==}
+  /caniuse-lite/1.0.30001465:
+    resolution: {integrity: sha512-HvjgL3MYAJjceTDCcjRnQGjwUz/5qec9n7JPOzUursUoOTIsYCSDOb1l7RsnZE8mjbxG78zVRCKfrBXyvChBag==}
     dev: true
 
   /ccount/2.0.1:
@@ -696,8 +696,8 @@ packages:
     engines: {node: '>=0.3.1'}
     dev: false
 
-  /electron-to-chromium/1.4.320:
-    resolution: {integrity: sha512-h70iRscrNluMZPVICXYl5SSB+rBKo22XfuIS1ER0OQxQZpKTnFpuS6coj7wY9M/3trv7OR88rRMOlKmRvDty7Q==}
+  /electron-to-chromium/1.4.328:
+    resolution: {integrity: sha512-DE9tTy2PNmy1v55AZAO542ui+MLC2cvINMK4P2LXGsJdput/ThVG9t+QGecPuAZZSgC8XoI+Jh9M1OG9IoNSCw==}
     dev: true
 
   /esbuild-android-64/0.15.18:
@@ -928,21 +928,21 @@ packages:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
     dev: false
 
-  /focus-trap-react/10.1.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-mAUw9lrcZbMz/KZZdU55TuwHp5991hES7z7WKokopzIsRC5cTmbMUXRIhN7ZNPW4Mt7ULAH+gVjm0v4e2kN4/Q==}
+  /focus-trap-react/10.1.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-OtLeSIQPKFzMzbLHkGtfZYwGLMhTRHd3CDhfyd0DDx8tvXzlgpseClDiuiKoiIHZtdjsbXTfTmUuuLKaxrwSyQ==}
     peerDependencies:
       prop-types: ^15.8.1
       react: '>=16.3.0'
       react-dom: '>=16.3.0'
     dependencies:
-      focus-trap: 7.3.1
+      focus-trap: 7.4.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tabbable: 6.1.1
     dev: false
 
-  /focus-trap/7.3.1:
-    resolution: {integrity: sha512-bX/u4FJ+F0Pp6b/8Q9W8Br/JaLJ7rrhOJAzai9JU8bh4BPdOjEATy4pxHcbBBxFjPN4d1oHy7/KqknEdOetm9w==}
+  /focus-trap/7.4.0:
+    resolution: {integrity: sha512-yI7FwUqU4TVb+7t6PaQ3spT/42r/KLEi8mtdGoQo2li/kFzmu9URmalTvw7xCCJtSOyhBxscvEAmvjeN9iHARg==}
     dependencies:
       tabbable: 6.1.1
     dev: false
@@ -1907,7 +1907,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite/3.2.5_@types+node@18.14.6:
+  /vite/3.2.5_@types+node@18.15.1:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1932,7 +1932,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.14.6
+      '@types/node': 18.15.1
       esbuild: 0.15.18
       postcss: 8.4.21
       resolve: 1.22.1

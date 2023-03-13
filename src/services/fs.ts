@@ -11,6 +11,9 @@ import iconHtml from "./far-more/icons/icons/html.svg?raw";
 import iconImage from "./far-more/icons/icons/image.svg?raw";
 import iconPdf from "./far-more/icons/icons/pdf.svg?raw";
 import iconVideo from "./far-more/icons/icons/video.svg?raw";
+import iconExe from "./far-more/icons/icons/exe.svg?raw";
+import iconMarkdown from "./far-more/icons/icons/markdown.svg?raw";
+import iconJson from "./far-more/icons/icons/json.svg?raw";
 
 const encoder = new TextEncoder();
 
@@ -54,6 +57,9 @@ export function buildFarMoreFs() {
   file(fs, "icons/icons/image.svg", iconImage);
   file(fs, "icons/icons/pdf.svg", iconPdf);
   file(fs, "icons/icons/video.svg", iconVideo);
+  file(fs, "icons/icons/exe.svg", iconExe);
+  file(fs, "icons/icons/markdown.svg", iconMarkdown);
+  file(fs, "icons/icons/json.svg", iconJson);
   return fs;
 }
 
