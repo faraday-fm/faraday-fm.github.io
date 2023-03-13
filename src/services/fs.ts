@@ -2,6 +2,15 @@ import { FileSystemProvider, InMemoryFsProvider } from "@far-more/web-ui";
 import { faker } from "@faker-js/faker/locale/en";
 import layout from "./far-more/layout.json5?raw";
 import settings from "./far-more/settings.json5?raw";
+import iconsPackageJson from "./far-more/icons/package.json?raw";
+import materialIconsJson from "./far-more/icons/dist/material-icons.json?raw";
+import iconAudio from "./far-more/icons/icons/audio.svg?raw";
+import iconFile from "./far-more/icons/icons/file.svg?raw";
+import iconFolder from "./far-more/icons/icons/folder.svg?raw";
+import iconHtml from "./far-more/icons/icons/html.svg?raw";
+import iconImage from "./far-more/icons/icons/image.svg?raw";
+import iconPdf from "./far-more/icons/icons/pdf.svg?raw";
+import iconVideo from "./far-more/icons/icons/video.svg?raw";
 
 const encoder = new TextEncoder();
 
@@ -33,6 +42,18 @@ export function buildFarMoreFs() {
   const fs = new InMemoryFsProvider();
   file(fs, "layout.json5", layout);
   file(fs, "settings.json5", settings);
+  dir(fs, "icons");
+  file(fs, "icons/package.json", iconsPackageJson);
+  dir(fs, "icons/dist");
+  file(fs, "icons/dist/material-icons.json", materialIconsJson);
+  dir(fs, "icons/icons");
+  file(fs, "icons/icons/audio.svg", iconAudio);
+  file(fs, "icons/icons/file.svg", iconFile);
+  file(fs, "icons/icons/folder.svg", iconFolder);
+  file(fs, "icons/icons/html.svg", iconHtml);
+  file(fs, "icons/icons/image.svg", iconImage);
+  file(fs, "icons/icons/pdf.svg", iconPdf);
+  file(fs, "icons/icons/video.svg", iconVideo);
   return fs;
 }
 
