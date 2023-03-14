@@ -1,27 +1,27 @@
 import { FileSystemProvider, InMemoryFsProvider } from "@far-more/web-ui";
-import { faker } from "@faker-js/faker/locale/en";
-import layout from "./far-more/layout.json5?raw";
-import settings from "./far-more/settings.json5?raw";
-import iconsPackageJson from "./far-more/icons/package.json?raw";
+import { randFileExt, randFileName, randLine } from "@ngneat/falso";
 import materialIconsJson from "./far-more/icons/dist/material-icons.json?raw";
 import iconAudio from "./far-more/icons/icons/audio.svg?raw";
+import iconExe from "./far-more/icons/icons/exe.svg?raw";
 import iconFile from "./far-more/icons/icons/file.svg?raw";
 import iconFolder from "./far-more/icons/icons/folder.svg?raw";
 import iconHtml from "./far-more/icons/icons/html.svg?raw";
 import iconImage from "./far-more/icons/icons/image.svg?raw";
+import iconJson from "./far-more/icons/icons/json.svg?raw";
+import iconMarkdown from "./far-more/icons/icons/markdown.svg?raw";
 import iconPdf from "./far-more/icons/icons/pdf.svg?raw";
 import iconVideo from "./far-more/icons/icons/video.svg?raw";
-import iconExe from "./far-more/icons/icons/exe.svg?raw";
-import iconMarkdown from "./far-more/icons/icons/markdown.svg?raw";
-import iconJson from "./far-more/icons/icons/json.svg?raw";
+import iconsPackageJson from "./far-more/icons/package.json?raw";
+import layout from "./far-more/layout.json5?raw";
+import settings from "./far-more/settings.json5?raw";
 
 const encoder = new TextEncoder();
 
 function createManyFiles(count: number) {
   const result: string[] = [];
   const filenames = new Set<string>();
-  while (filenames.size < count) {
-    const fn = faker.system.commonFileName();
+  for (let i = 0; i < count; i++) {
+    const fn = randFileName({ extension: randFileExt() });
     if (!filenames.has(fn)) {
       filenames.add(fn);
       result.push(fn);
@@ -92,13 +92,17 @@ export function buildDemoFs() {
   file(fs, "far-more.app/UTF files/عرب", "عرب");
   file(fs, "far-more.app/UTF files/แบบไทย", "แบบไทย");
   file(fs, "far-more.app/UTF files/asd\r\nfgh", "asd\r\nfgh");
-  dir(fs, "far-more.app/UTF files/S\\p;e\:c\'i\"al dir");
-  file(fs, "far-more.app/UTF files/S\\p;e\:c\'i\"al dir/back\\slash file", "back\\slash file");
+  dir(fs, "far-more.app/UTF files/S\\p;e:c'i\"al dir");
+  file(
+    fs,
+    "far-more.app/UTF files/S\\p;e:c'i\"al dir/back\\slash file",
+    "back\\slash file"
+  );
   return fs;
 }
 
 function randomContent(): string {
-  const lines = (1 + Math.random() * 20) | 0;
-  let content = faker.lorem.lines(lines);
+  const lineCount = (1 + Math.random() * 20) | 0;
+  let content = randLine({ lineCount });
   return content;
 }

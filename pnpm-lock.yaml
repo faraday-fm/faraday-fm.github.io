@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@faker-js/faker': ^7.6.0
   '@far-more/web-ui': ^1.11.4
   '@monaco-editor/react': ^4.4.6
+  '@ngneat/falso': ^6.4.0
   '@types/node': ^18.15.1
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
@@ -16,9 +16,9 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
-  '@faker-js/faker': 7.6.0
   '@far-more/web-ui': 1.11.4_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
+  '@ngneat/falso': 6.4.0
   monaco-editor: 0.36.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -350,11 +350,6 @@ packages:
     dev: true
     optional: true
 
-  /@faker-js/faker/7.6.0:
-    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
-    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
-    dev: false
-
   /@far-more/web-ui/1.11.4_wkgbi54btsxvo5wjc3crn6xe3i:
     resolution: {integrity: sha512-KuWF0eHyx/Q7lf8ek06z7Z181VLyY7eBoFZlQKR61Qi2H+qikt8sJYmhv4ryF0eWCz1v85HMRPspLRDObwboBQ==}
     peerDependencies:
@@ -454,6 +449,13 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@ngneat/falso/6.4.0:
+    resolution: {integrity: sha512-f6r036h2fX/AoHw1eV2t8+qWQwrbSrozs3zXMhhwoO7SJBc+DGMxRWEhFeYIinfwx0uhUH8ggx5+PDLzYESLOA==}
+    dependencies:
+      seedrandom: 3.0.5
+      uuid: 8.3.2
     dev: false
 
   /@reduxjs/toolkit/1.9.3_k4ae6lp43ej6mezo3ztvx6pykq:
@@ -1712,6 +1714,10 @@ packages:
       loose-envify: 1.4.0
     dev: false
 
+  /seedrandom/3.0.5:
+    resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
+    dev: false
+
   /semver/6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
@@ -1878,6 +1884,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
     dev: false
 
   /uvu/0.5.6:
