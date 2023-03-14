@@ -4,46 +4,6 @@
   type: "row",
   children: [
     {
-      id: "col1",
-      type: "row",
-      children: [
-        {
-          id: "panel2",
-          type: "file-panel",
-          flex: 1.6,
-          path: "file:///far-more.app/Many Files",
-          view: {
-            type: "condensed",
-            columnDef: { field: "name", name: "Name" },
-          },
-        },
-        {
-          id: "row2",
-          type: "row",
-          children: [
-            {
-              id: "panel3",
-              type: "file-panel",
-              path: "file:///",
-              view: {
-                type: "condensed",
-                columnDef: { field: "name", name: "Name" },
-              },
-            },
-            {
-              id: "panel4",
-              type: "file-panel",
-              path: "far-more:/",
-              view: {
-                type: "condensed",
-                columnDef: { field: "name", name: "Name" },
-              },
-            },
-          ],
-        },
-      ],
-    },
-    {
       id: "col2",
       type: "row",
       children: [
@@ -56,12 +16,28 @@
             columnDef: { field: "name", name: "Name" },
           },
         },
+      ],
+    },
+    {
+      id: "col1",
+      type: "row",
+      children: [
+        {
+          id: "panel2",
+          type: "file-panel",
+          flex: 1.6,
+          path: "far-more:/",
+          view: {
+            type: "condensed",
+            columnDef: { field: "name", name: "Name" },
+          },
+        },
         {
           id: "qw1",
           type: "quick-view",
-          when: "filePanel.selectedName != 'mount' && !(filePanel.selectedName == 'far-more.app')",
+          // when: "filePanel.selectedName != 'mount' && !(filePanel.selectedName == 'far-more.app')",
           // when: "filePanel.selectedName == 'mount'",
-          when: "filePanel.isFileSelected"
+          // when: "filePanel.isFileSelected",
         },
       ],
     },

@@ -1,36 +1,36 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@far-more/web-ui': ^1.11.4
+  '@far-more/web-ui': ^1.11.5
   '@monaco-editor/react': ^4.4.6
   '@ngneat/falso': ^6.4.0
-  '@types/node': ^18.15.1
+  '@types/node': ^18.15.3
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@vitejs/plugin-react': ^2.2.0
   monaco-editor: ^0.36.1
   react: ^18.2.0
   react-dom: ^18.2.0
-  styled-components: ^5.3.8
+  styled-components: ^5.3.9
   typescript: ^4.9.5
   vite: ^3.2.5
 
 dependencies:
-  '@far-more/web-ui': 1.11.4_wkgbi54btsxvo5wjc3crn6xe3i
+  '@far-more/web-ui': 1.11.5_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   '@ngneat/falso': 6.4.0
   monaco-editor: 0.36.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  styled-components: 5.3.8_biqbaboplfbrettd7655fr4n2y
+  styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@types/node': 18.15.1
+  '@types/node': 18.15.3
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 2.2.0_vite@3.2.5
   typescript: 4.9.5
-  vite: 3.2.5_@types+node@18.15.1
+  vite: 3.2.5_@types+node@18.15.3
 
 packages:
 
@@ -350,8 +350,8 @@ packages:
     dev: true
     optional: true
 
-  /@far-more/web-ui/1.11.4_wkgbi54btsxvo5wjc3crn6xe3i:
-    resolution: {integrity: sha512-KuWF0eHyx/Q7lf8ek06z7Z181VLyY7eBoFZlQKR61Qi2H+qikt8sJYmhv4ryF0eWCz1v85HMRPspLRDObwboBQ==}
+  /@far-more/web-ui/1.11.5_wkgbi54btsxvo5wjc3crn6xe3i:
+    resolution: {integrity: sha512-xS/au3ZEn/Pk1N4oNuJ3I+Dz9EYPyf8cThQfNR7dUxbl7f1CMDB12y8t9Xo9v5SVSwtW0sAdp7IxovcDeyv16g==}
     peerDependencies:
       '@monaco-editor/react': ^4.4.6
       react: '>=18'
@@ -374,7 +374,7 @@ packages:
       react-redux: 8.0.5_3xleytyzprlgycb2ded54tx72i
       react-resize-observer: 1.1.1_react@18.2.0
       remark-gfm: 3.0.1
-      styled-components: 5.3.8_biqbaboplfbrettd7655fr4n2y
+      styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
       use-resize-observer: 9.1.0_biqbaboplfbrettd7655fr4n2y
       xterm: 5.1.0
       xterm-addon-fit: 0.6.0_xterm@5.1.0
@@ -506,8 +506,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.15.1:
-    resolution: {integrity: sha512-U2TWca8AeHSmbpi314QBESRk7oPjSZjDsR+c+H4ECC1l+kFgpZf8Ydhv3SJpPy51VyZHHqxlb6mTTqYNNRVAIw==}
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -549,7 +549,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.21.0
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.2.5_@types+node@18.15.1
+      vite: 3.2.5_@types+node@18.15.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -565,7 +565,7 @@ packages:
     dependencies:
       color-convert: 1.9.3
 
-  /babel-plugin-styled-components/2.0.7_styled-components@5.3.8:
+  /babel-plugin-styled-components/2.0.7_styled-components@5.3.9:
     resolution: {integrity: sha512-i7YhvPgVqRKfoQ66toiZ06jPNA3p6ierpfUuEWxNF+fV27Uv5gxBkf8KZLHUCc1nFA9j6+80pYoIpqCeyW3/bA==}
     peerDependencies:
       styled-components: '>= 2'
@@ -575,7 +575,7 @@ packages:
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 5.3.8_biqbaboplfbrettd7655fr4n2y
+      styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
     dev: false
 
   /babel-plugin-syntax-jsx/6.18.0:
@@ -591,7 +591,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001465
+      caniuse-lite: 1.0.30001466
       electron-to-chromium: 1.4.328
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
@@ -601,8 +601,8 @@ packages:
     resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
     dev: false
 
-  /caniuse-lite/1.0.30001465:
-    resolution: {integrity: sha512-HvjgL3MYAJjceTDCcjRnQGjwUz/5qec9n7JPOzUursUoOTIsYCSDOb1l7RsnZE8mjbxG78zVRCKfrBXyvChBag==}
+  /caniuse-lite/1.0.30001466:
+    resolution: {integrity: sha512-ewtFBSfWjEmxUgNBSZItFSmVtvk9zkwkl1OfRZlKA8slltRN+/C/tuGVrF9styXkN36Yu3+SeJ1qkXxDEyNZ5w==}
     dev: true
 
   /ccount/2.0.1:
@@ -1751,8 +1751,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /styled-components/5.3.8_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-6jQrlvaJQ16uWVVO0rBfApaTPItkqaG32l3746enNZzpMDxMvzmHzj8rHUg39bvVtom0Y8o8ZzWuchEXKGjVsg==}
+  /styled-components/5.3.9_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Aj3kb13B75DQBo2oRwRa/APdB5rSmwUfN5exyarpX+x/tlM/rwZA2vVk2vQgVSP6WKaZJHWwiFrzgHt+CLtB4A==}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -1765,7 +1765,7 @@ packages:
       '@emotion/is-prop-valid': 1.2.0
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 2.0.7_styled-components@5.3.8
+      babel-plugin-styled-components: 2.0.7_styled-components@5.3.9
       css-to-react-native: 3.2.0
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
@@ -1918,7 +1918,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite/3.2.5_@types+node@18.15.1:
+  /vite/3.2.5_@types+node@18.15.3:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1943,7 +1943,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.15.1
+      '@types/node': 18.15.3
       esbuild: 0.15.18
       postcss: 8.4.21
       resolve: 1.22.1

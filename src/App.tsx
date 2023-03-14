@@ -1,10 +1,12 @@
 import { FarMore, FarMoreHost } from "@far-more/web-ui";
 import { buildDemoFs, buildFarMoreFs } from "./services/fs";
+import { GitHubFs } from "./services/GitHubFs";
 import { WebFs } from "./services/WebFs";
 
 const farMoreFs = buildFarMoreFs();
 const demoFs = buildDemoFs();
 demoFs.createDirectory("mount");
+demoFs.mount("github", new GitHubFs("far-more", "web-ui"));
 
 const host: FarMoreHost = {
   config: {
