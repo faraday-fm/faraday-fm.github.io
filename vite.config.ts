@@ -7,9 +7,9 @@ export default defineConfig(({ command }) => {
   if (command === 'serve') {
     return {
       plugins: [react()],
-      optimizeDeps: { exclude: ["@far-more/web-ui"] },
+      optimizeDeps: { exclude: ["@frdy/web-ui"] },
       resolve: {
-        alias: { "@far-more/web-ui": path.join(__dirname, "../web-ui/dist/far-more-web.esm.js") },
+        alias: { "@frdy/web-ui": path.join(__dirname, "../web-ui/dist/index.esm.js") },
       },
     };
   }

@@ -2,7 +2,7 @@ import {
   FileSystemProvider,
   FileSystemWatcher,
   FsEntry,
-} from "@far-more/web-ui";
+} from "@frdy/web-ui";
 
 export class GitHubFs implements FileSystemProvider {
   constructor(private username: string, private repo: string) {}

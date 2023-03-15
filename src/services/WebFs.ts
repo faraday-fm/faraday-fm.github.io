@@ -2,7 +2,7 @@ import {
   FileSystemProvider,
   FileSystemWatcher,
   FsEntry,
-} from "@far-more/web-ui";
+} from "@frdy/web-ui";
 
 export class WebFs implements FileSystemProvider {
   private root: FileSystemDirectoryEntry;

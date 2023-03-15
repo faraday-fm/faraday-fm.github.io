@@ -26,7 +26,7 @@
           id: "panel2",
           type: "file-panel",
           flex: 1.6,
-          path: "far-more:/",
+          path: "faraday:/",
           view: {
             type: "condensed",
             columnDef: { field: "name", name: "Name" },
@@ -35,7 +35,7 @@
         {
           id: "qw1",
           type: "quick-view",
-          // when: "filePanel.selectedName != 'mount' && !(filePanel.selectedName == 'far-more.app')",
+          // when: "filePanel.selectedName != 'mount' && !(filePanel.selectedName == 'faraday.app')",
           // when: "filePanel.selectedName == 'mount'",
           // when: "filePanel.isFileSelected",
         },

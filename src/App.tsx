@@ -1,18 +1,18 @@
-import { FarMore, FarMoreHost } from "@far-more/web-ui";
+import { Faraday, FaradayHost } from "@frdy/web-ui";
 import { buildDemoFs, buildFarMoreFs } from "./services/fs";
 import { GitHubFs } from "./services/GitHubFs";
 import { WebFs } from "./services/WebFs";
 
-const farMoreFs = buildFarMoreFs();
+const faradayFs = buildFarMoreFs();
 const demoFs = buildDemoFs();
 demoFs.createDirectory("mount");
-demoFs.mount("github", new GitHubFs("far-more", "web-ui"));
+demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
 
-const host: FarMoreHost = {
+const host: FaradayHost = {
   config: {
     isDesktop: () => false,
   },
-  farMoreFs,
+  faradayFs,
   rootFs: demoFs,
 };
 
@@ -37,7 +37,7 @@ function App() {
       onDragOver={handleDragOver}
       style={{ width: "100%", height: "100%", display: "grid" }}
     >
-      <FarMore host={host} />
+      <Faraday host={host} />
     </div>
   );
 }
