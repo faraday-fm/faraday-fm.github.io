@@ -1,0 +1,30 @@
+{
+  "name": "text-viewer",
+  "displayName": "Text Viewer",
+  "description": "Text Viewer",
+  "version": "0.0.1",
+  "publisher": "faraday",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faraday-fm/extension-text-viewer.git"
+  },
+  "engines": {
+    "faraday": ">=0.0.0"
+  },
+  "categories": [
+    "QuickView"
+  ],
+  "keywords": [
+    "quickview",
+    "text"
+  ],
+  "contributes": {
+    "quickViews": [
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "mimetypes": ["text/javascript"],
+        "path": "./dist/viewer.js"
+      }
+    ]
+  }
+}

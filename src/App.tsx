@@ -1,9 +1,9 @@
 import { Faraday, FaradayHost } from "@frdy/web-ui";
-import { buildDemoFs, buildFarMoreFs } from "./services/fs";
+import { buildDemoFs, buildFaradayFs } from "./services/fs";
 import { GitHubFs } from "./services/GitHubFs";
 import { WebFs } from "./services/WebFs";
 
-const faradayFs = buildFarMoreFs();
+const faradayFs = await buildFaradayFs();
 const demoFs = buildDemoFs();
 demoFs.createDirectory("mount");
 demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
@@ -26,7 +26,10 @@ const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
   if (root && root.isDirectory) {
     e.preventDefault();
     e.stopPropagation();
-    demoFs.mount("mount/" + root.name, new WebFs(root as FileSystemDirectoryEntry));
+    demoFs.mount(
+      "mount/" + root.name,
+      new WebFs(root as FileSystemDirectoryEntry)
+    );
   }
 };
 

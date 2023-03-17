@@ -1,0 +1,50 @@
+// Application layout.
+{
+  id: "row1",
+  type: "row",
+  children: [
+    {
+      id: "col1",
+      type: "row",
+      children: [
+        {
+          id: "panel1",
+          type: "file-panel",
+          flex: 1.6,
+          path: "file:/",
+          view: {
+            type: "condensed",
+            columnDef: { field: "name", name: "Name" },
+          },
+        },
+      ],
+    },
+    {
+      id: "col2",
+      type: "row",
+      children: [
+        {
+          id: "panel2",
+          type: "file-panel",
+          flex: 1,
+          path: "faraday:/",
+          view: {
+            /*type: "full",
+            columnDefs: [
+              { field: "name", name: "Name", width: "1fr" },
+              { field: "size", name: "Size" },
+            ],*/
+            type: "condensed",
+            columnDef: { field: "name", name: "Name" },
+          },
+          // when: "quickView.visible",
+        },
+        {
+          id: "panel3",
+          type: "quick-view",
+          //when: "!filePanel.firstItem",
+        },
+      ],
+    },
+  ],
+}
