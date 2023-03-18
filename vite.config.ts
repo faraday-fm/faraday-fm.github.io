@@ -1,4 +1,4 @@
-import { defineConfig, Plugin } from "vite";
+import { defineConfig, Plugin, UserConfig } from "vite";
 import JSZip from "jszip";
 import path from "node:path";
 import react from "@vitejs/plugin-react";
@@ -18,13 +18,12 @@ function zipFolderPlugin(): Plugin {
   };
   return {
     name: "zip-folder",
-    async resolveId(source, importer, options) {
+    async resolveId(source, importer) {
       if (source.endsWith("?zip")) {
         return { id: path.join(path.dirname(importer), source) };
       }
-      // return {id: "***"};
     },
-    async load(id, options) {
+    async load(id) {
       if (id.endsWith("?zip")) {
         const folder = id.substring(0, id.lastIndexOf("?"));
         const zip = new JSZip();
@@ -35,17 +34,26 @@ function zipFolderPlugin(): Plugin {
           code: `export default fetch("data:application/octet-binary;base64,${res}").then(res => res.arrayBuffer());`,
         };
       }
-      // console.info("***", id);
     },
   };
 }
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
+  const localLibs = process.env.LOCAL_LIBS === "true";
+
   const plugins = [react(), zipFolderPlugin()];
-  if (command === "serve") {
-    return {
-      plugins,
+
+  let config: UserConfig = {
+    plugins,
+    build: {
+      target: "esnext",
+    },
+  };
+
+  if (localLibs) {
+    config = {
+      ...config,
       optimizeDeps: { exclude: ["@frdy/web-ui"] },
       resolve: {
         alias: {
@@ -54,10 +62,6 @@ export default defineConfig(({ command }) => {
       },
     };
   }
-  return {
-    plugins,
-    build: {
-      target: "esnext",
-    },
-  };
+
+  return config;
 });

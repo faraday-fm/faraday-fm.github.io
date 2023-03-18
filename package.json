@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "dev:force": "vite --force",
+    "dev:locallibs": "cross-env LOCAL_LIBS=true vite",
     "build": "tsc && vite build",
+    "build:locallibs": "tsc && cross-env LOCAL_LIBS=true vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^2.2.0",
+    "cross-env": "^7.0.3",
     "jszip": "^3.10.1",
     "typescript": "^4.9.5",
     "vite": "^3.2.5"
