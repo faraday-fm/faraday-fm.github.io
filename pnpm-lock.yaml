@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@frdy/web-ui': ^1.12.4
+  '@frdy/web-ui': ^1.12.5
   '@monaco-editor/react': ^4.4.6
   '@types/node': ^18.15.3
   '@types/react': ^18.0.28
@@ -18,7 +18,7 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
-  '@frdy/web-ui': 1.12.4_wkgbi54btsxvo5wjc3crn6xe3i
+  '@frdy/web-ui': 1.12.5_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -354,8 +354,8 @@ packages:
     dev: true
     optional: true
 
-  /@frdy/web-ui/1.12.4_wkgbi54btsxvo5wjc3crn6xe3i:
-    resolution: {integrity: sha512-DCZaSW8i+Qf/sUQbhb4y//g/GqIXEOZpSokGbYQsWBq+AWUYRwBJirGLEfMxtOQLV9m//JftvPvFXU53gCRP1w==}
+  /@frdy/web-ui/1.12.5_wkgbi54btsxvo5wjc3crn6xe3i:
+    resolution: {integrity: sha512-eQWRizxqUdbuWKmT1bIWhC8uM4pYRLgnl0dERdMJ5CbXd/t6bBipiBK22SL3LXliXQuM4SQJdmOs6sHLIKPr7w==}
     peerDependencies:
       '@monaco-editor/react': ^4.4.6
       react: '>=18'

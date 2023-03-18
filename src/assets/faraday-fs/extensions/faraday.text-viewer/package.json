@@ -21,8 +21,7 @@
   "contributes": {
     "quickViews": [
       {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "mimetypes": ["text/javascript"],
+        "extensions": [".txt"],
         "path": "./dist/viewer.js"
       }
     ]

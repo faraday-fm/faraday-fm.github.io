@@ -1,80 +1,19 @@
 {
   "name": "markdown-viewer",
-  "displayName": "Image Viewer",
-  "description": "Image Viewer",
-  "version": "0.0.1",
+  "displayName": "markdown-viewer",
+  "description": "markdown-viewer",
+  "version": "0.0.0",
   "publisher": "faraday",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/faraday-fm/extension-image-viewer.git"
-  },
-  "engines": {
-    "faraday": ">=0.0.0",
-    "dotnet": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
-  "categories": [
-    "QuickView"
-  ],
-  "keywords": [
-    "quickview",
-    "image"
-  ],
-  "main": "./dist/main",
-  "browser": "./dist/browser",
+  "author": "Mikhail Isupov",
+  "license": "MIT",
+  "private": true,
   "contributes": {
     "quickViews": [
       {
-        "extensions": [".md"],
-        "mimetypes": ["image/apng", "image/avif", "image/gif", "image/jpeg", "image/png", "image/svg+xml", "image/webp", "image/bmp", "image/x-icon"],
-        "path": "./dist/markdown.js"
-      }
-    ],
-    "mimetypeResolvers": [
-      {
-        "id": "apng",
-        "description": "Animated Portable Network Graphics",
-        "mimeType": "image/apng"
-      },
-      {
-        "id": "avif",
-        "description": "AV1 Image File Format",
-        "mimeType": "image/avif"
-      },
-      {
-        "id": "gif",
-        "description": "Graphics Interchange Format",
-        "mimeType": "image/gif"
-      },
-      {
-        "id": "jpeg",
-        "description": "Joint Photographic Expert Group image",
-        "mimeType": "image/jpeg"
-      },
-      {
-        "id": "png",
-        "description": "Portable Network Graphics",
-        "mimeType": "image/png"
-      },
-      {
-        "id": "svg",
-        "description": "Scalable Vector Graphics",
-        "mimeType": "image/svg+xml"
-      },
-      {
-        "id": "webp",
-        "description": "Web Picture format",
-        "mimeType": "image/webp"
-      },
-      {
-        "id": "bmp",
-        "description": "Bitmap file",
-        "mimeType": "image/bmp"
-      },
-      {
-        "id": "ico",
-        "description": "Microsoft Icon",
-        "mimeType": "image/x-icon"
+        "extensions": [
+          ".md"
+        ],
+        "path": "./markdown.js"
       }
     ]
   }
