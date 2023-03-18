@@ -1,5 +1,5 @@
 {
-  "name": "image-viewer",
+  "name": "markdown-viewer",
   "displayName": "Image Viewer",
   "description": "Image Viewer",
   "version": "0.0.1",
@@ -25,9 +25,9 @@
   "contributes": {
     "quickViews": [
       {
-        "extensions": [".apng", ".avif", ".gif", ".jpg", ".jpeg", ".jfif", ".pjpeg", ".pjp", ".png", ".svg", ".webp", ".bmp", ".ico"],
+        "extensions": [".md"],
         "mimetypes": ["image/apng", "image/avif", "image/gif", "image/jpeg", "image/png", "image/svg+xml", "image/webp", "image/bmp", "image/x-icon"],
-        "path": "./dist/image.js"
+        "path": "./dist/markdown.js"
       }
     ],
     "mimetypeResolvers": [

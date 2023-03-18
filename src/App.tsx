@@ -4,7 +4,7 @@ import { GitHubFs } from "./services/GitHubFs";
 import { WebFs } from "./services/WebFs";
 
 const faradayFs = await buildFaradayFs();
-const demoFs = buildDemoFs();
+const demoFs = await buildDemoFs();
 demoFs.createDirectory("mount");
 demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
 

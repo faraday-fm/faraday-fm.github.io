@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@frdy/web-ui': ^1.12.1
+  '@frdy/web-ui': ^1.12.3
   '@monaco-editor/react': ^4.4.6
   '@types/node': ^18.15.3
   '@types/react': ^18.0.28
@@ -18,7 +18,7 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
-  '@frdy/web-ui': 1.12.1_wkgbi54btsxvo5wjc3crn6xe3i
+  '@frdy/web-ui': 1.12.3_wkgbi54btsxvo5wjc3crn6xe3i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -354,8 +354,8 @@ packages:
     dev: true
     optional: true
 
-  /@frdy/web-ui/1.12.1_wkgbi54btsxvo5wjc3crn6xe3i:
-    resolution: {integrity: sha512-U+VSZyzl16lVuX3xQrkhA3WL6pJ9ZAmoHdesSFdNWIye0zAJOSIPtBZbTz6eZwIMinSucpjURYxUIUWriCYY0A==}
+  /@frdy/web-ui/1.12.3_wkgbi54btsxvo5wjc3crn6xe3i:
+    resolution: {integrity: sha512-oddK1/b4ZEo5v4dnBTUp7zhDryG9SxLB+LxRthP3YjPwZLQc4RrZlm4IsnUUfQ2Wi2WGydYQbMs9HKg1Kils0w==}
     peerDependencies:
       '@monaco-editor/react': ^4.4.6
       react: '>=18'
@@ -590,7 +590,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001467
-      electron-to-chromium: 1.4.332
+      electron-to-chromium: 1.4.333
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -717,8 +717,8 @@ packages:
     engines: {node: '>=0.3.1'}
     dev: false
 
-  /electron-to-chromium/1.4.332:
-    resolution: {integrity: sha512-c1Vbv5tuUlBFp0mb3mCIjw+REEsgthRgNE8BlbEDKmvzb8rxjcVki6OkQP83vLN34s0XCxpSkq7AZNep1a6xhw==}
+  /electron-to-chromium/1.4.333:
+    resolution: {integrity: sha512-YyE8+GKyGtPEP1/kpvqsdhD6rA/TP1DUFDN4uiU/YI52NzDxmwHkEb3qjId8hLBa5siJvG0sfC3O66501jMruQ==}
     dev: true
 
   /esbuild-android-64/0.15.18:

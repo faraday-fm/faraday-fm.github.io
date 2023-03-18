@@ -14,8 +14,8 @@ export function init() {
   document.body.appendChild(root);
 }
 
-export function updateContent(content, path) {
+export function updateContent({content, path}) {
   const root = document.getElementById("root");
 
-  root.innerText = new TextDecoder().decode(content.buffer);
+  root.innerText = content ? new TextDecoder().decode(content.buffer) : "";
 }
