@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@frdy/web-ui': ^1.12.6
+  '@frdy/web-ui': ^1.12.7
   '@monaco-editor/react': ^4.4.6
   '@types/node': ^18.15.3
   '@types/react': ^18.0.28
@@ -18,7 +18,7 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
-  '@frdy/web-ui': 1.12.6_3xleytyzprlgycb2ded54tx72i
+  '@frdy/web-ui': 1.12.7_3xleytyzprlgycb2ded54tx72i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -354,8 +354,8 @@ packages:
     dev: true
     optional: true
 
-  /@frdy/web-ui/1.12.6_3xleytyzprlgycb2ded54tx72i:
-    resolution: {integrity: sha512-nDbpPQR6kvO/TfPcoqVhHLfpisftjTQTeOsXigCa9jWQdMfe2xpsJx53cdh10w9PaoEl+aDQfcCLzBAyfpFHpw==}
+  /@frdy/web-ui/1.12.7_3xleytyzprlgycb2ded54tx72i:
+    resolution: {integrity: sha512-Wsy13lds1yoGYIVQvLcNmfhc1ASET3rymCulh3WZZKSGeLSpv3QaK2cCF5JGA4Xd4gzVdCudWSb9G8MLTX1GhA==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -553,7 +553,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001467
+      caniuse-lite: 1.0.30001468
       electron-to-chromium: 1.4.333
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
@@ -563,8 +563,8 @@ packages:
     resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
     dev: false
 
-  /caniuse-lite/1.0.30001467:
-    resolution: {integrity: sha512-cEdN/5e+RPikvl9AHm4uuLXxeCNq8rFsQ+lPHTfe/OtypP3WwnVVbjn+6uBV7PaFL6xUFzTh+sSCOz1rKhcO+Q==}
+  /caniuse-lite/1.0.30001468:
+    resolution: {integrity: sha512-zgAo8D5kbOyUcRAgSmgyuvBkjrGk5CGYG5TYgFdpQv+ywcyEpo1LOWoG8YmoflGnh+V+UsNuKYedsoYs0hzV5A==}
     dev: true
 
   /chalk/2.4.2:
