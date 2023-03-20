@@ -14,9 +14,10 @@ export default defineConfig(({ command }) => {
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: "inline",
-      // workbox: {
-      //   globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
-      // },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        maximumFileSizeToCacheInBytes: 10000000,
+      },
       includeAssets: ["faraday.svg", "faraday_180.png", "faraday-mask.svg"],
       devOptions: {
         enabled: true,
