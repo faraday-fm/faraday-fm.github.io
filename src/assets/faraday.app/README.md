@@ -1,3 +1,3 @@
 # Faraday
 
-README.md
+Offline mode
