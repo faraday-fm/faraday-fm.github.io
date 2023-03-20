@@ -19,7 +19,6 @@
     "unzipit": "^1.4.2"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^5.0.2",
     "@types/node": "^18.15.3",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -27,11 +26,6 @@
     "cross-env": "^7.0.3",
     "jszip": "^3.10.1",
     "typescript": "^4.9.5",
-    "vite": "^3.2.5",
-    "vite-plugin-pwa": "^0.14.4",
-    "workbox-core": "^6.5.4",
-    "workbox-precaching": "^6.5.4",
-    "workbox-routing": "^6.5.4",
-    "workbox-window": "^6.5.4"
+    "vite": "^3.2.5"
   }
 }

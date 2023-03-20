@@ -1,3 +1,3 @@
 # Faraday
 
-PWA Test
+Test

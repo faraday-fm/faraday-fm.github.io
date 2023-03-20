@@ -28,7 +28,10 @@ export function zipFolderPlugin(): Plugin {
         const zip = new JSZip();
         buildZip(folder, zip);
 
-        const res = await zip.generateAsync({ type: "base64" });
+        const res = await zip.generateAsync({
+          type: "base64",
+          compression: "DEFLATE",
+        });
         return {
           code: `export default fetch("data:application/octet-binary;base64,${res}").then(res => res.arrayBuffer());`,
         };
