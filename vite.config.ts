@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => {
     react(),
     zipFolderPlugin(),
     VitePWA({
-      registerType: "autoUpdate",
+      registerType: "prompt",
       injectRegister: "inline",
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
@@ -27,6 +27,7 @@ export default defineConfig(({ command }) => {
         short_name: "Faraday",
         description: "Faraday file manager",
         theme_color: "#1e1e1e",
+        background_color: "#1e1e1e",
         icons: [
           {
             src: "faraday_512.png",
