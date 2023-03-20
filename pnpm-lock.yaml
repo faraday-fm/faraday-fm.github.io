@@ -18,6 +18,10 @@ specifiers:
   unzipit: ^1.4.2
   vite: ^3.2.5
   vite-plugin-pwa: ^0.14.4
+  workbox-core: ^6.5.4
+  workbox-precaching: ^6.5.4
+  workbox-routing: ^6.5.4
+  workbox-window: ^6.5.4
 
 dependencies:
   '@frdy/web-ui': 1.12.7_3xleytyzprlgycb2ded54tx72i
@@ -38,7 +42,11 @@ devDependencies:
   jszip: 3.10.1
   typescript: 4.9.5
   vite: 3.2.5_@types+node@18.15.3
-  vite-plugin-pwa: 0.14.4_vite@3.2.5
+  vite-plugin-pwa: 0.14.4_v7patrztka3wxwjwwj7rxgk7ey
+  workbox-core: 6.5.4
+  workbox-precaching: 6.5.4
+  workbox-routing: 6.5.4
+  workbox-window: 6.5.4
 
 packages:
 
@@ -3476,10 +3484,11 @@ packages:
     resolution: {integrity: sha512-AMqwWZaknLM77G+VPYNZLEruMGWGzyigPK3/Whg99B3S6vGHuqsyl5ZrOv1UUF3paGK1U6PM0cnayioaryg/fA==}
     dev: false
 
-  /vite-plugin-pwa/0.14.4_vite@3.2.5:
+  /vite-plugin-pwa/0.14.4_v7patrztka3wxwjwwj7rxgk7ey:
     resolution: {integrity: sha512-M7Ct0so8OlouMkTWgXnl8W1xU95glITSKIe7qswZf1tniAstO2idElGCnsrTJ5NPNSx1XqfTCOUj8j94S6FD7Q==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
+      workbox-window: ^6.5.4
     dependencies:
       '@rollup/plugin-replace': 5.0.2_rollup@3.19.1
       debug: 4.3.4
