@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import { zipFolderPlugin } from "./zipFolderPlugin";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   const localLibs = process.env.LOCAL_LIBS === "true";
 
   let config: UserConfig = {
