@@ -26,6 +26,7 @@
     "cross-env": "^7.0.3",
     "jszip": "^3.10.1",
     "typescript": "^4.9.5",
-    "vite": "^3.2.5"
+    "vite": "^3.2.5",
+    "vite-plugin-pwa": "^0.14.4"
   }
 }
