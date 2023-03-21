@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@frdy/web-ui": "^1.12.7",
+    "@frdy/web-ui": "^1.12.8",
     "@monaco-editor/react": "^4.4.6",
     "monaco-editor": "^0.36.1",
     "react": "^18.2.0",
@@ -19,7 +19,7 @@
     "unzipit": "^1.4.2"
   },
   "devDependencies": {
-    "@types/node": "^18.15.3",
+    "@types/node": "^18.15.5",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^2.2.0",
