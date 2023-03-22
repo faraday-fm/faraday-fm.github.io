@@ -10,6 +10,7 @@
   "contributes": {
     "quickViews": [
       {
+        "id": "markdown",
         "extensions": [
           ".md"
         ],

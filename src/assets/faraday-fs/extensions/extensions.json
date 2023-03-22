@@ -1,25 +1,26 @@
 [
   {
     "identifier": {
-      "id": "faraday.image-viewer",
-      "uuid": "e79fd228-c27f-423b-a8fc-b006fa99ed64"
-    },
-    "version": "0.0.1",
-    "location": {
-      "$mid": 1,
-      "path": "/Users/mike/.faraday/extensions/faraday.image-viewer-0.0.1",
-      "scheme": "file"
+      "uuid": "b006fa99ed64"
     },
     "relativeLocation": "faraday.image-viewer-0.0.1",
-    "metadata": {
-      "id": "e79fd228-c27f-423b-a8fc-b006fa99ed64",
-      "publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324",
-      "publisherDisplayName": "faraday",
-      "targetPlatform": "undefined",
-      "updated": false,
-      "isPreReleaseVersion": false,
-      "preRelease": false,
-      "installedTimestamp": 1652173002604
-    }
+  },
+  {
+    "identifier": {
+      "uuid": "e79fd22821"
+    },
+    "relativeLocation": "faraday.markdown-viewer-0.0.1"
+  },
+  {
+    "identifier": {
+      "uuid": "diasfjhgsiadjf"
+    },
+    "relativeLocation": "faraday.code-viewer-0.0.1"
+  },
+  {
+    "identifier": {
+      "uuid": "diaafdsadjf"
+    },
+    "relativeLocation": "faraday.text-viewer-0.0.1"
   }
 ]

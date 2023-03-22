@@ -2,7 +2,7 @@
   "name": "image-viewer",
   "displayName": "image-viewer",
   "description": "image-viewer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publisher": "faraday",
   "author": "Mikhail Isupov",
   "license": "MIT",
@@ -10,6 +10,7 @@
   "contributes": {
     "quickViews": [
       {
+        "id": "img",
         "extensions": [
           ".apng",
           ".avif",

@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@frdy/web-ui': ^1.12.8
+  '@frdy/web-ui': ^1.12.9
   '@monaco-editor/react': ^4.4.6
   '@types/node': ^18.15.5
   '@types/react': ^18.0.28
@@ -18,7 +18,7 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
-  '@frdy/web-ui': 1.12.8_3xleytyzprlgycb2ded54tx72i
+  '@frdy/web-ui': 1.12.9_3xleytyzprlgycb2ded54tx72i
   '@monaco-editor/react': 4.4.6_waewrrayshn643ztij6zbniufy
   monaco-editor: 0.36.1
   react: 18.2.0
@@ -354,8 +354,8 @@ packages:
     dev: true
     optional: true
 
-  /@frdy/web-ui/1.12.8_3xleytyzprlgycb2ded54tx72i:
-    resolution: {integrity: sha512-dzyDG4jkFNJYHGssDrIY8lJWMV6JqljfhiD/Bq7iJLMB8QpedP93aemV/3rusl5ocxq1NC6ljRYxyJO5Yk3d0w==}
+  /@frdy/web-ui/1.12.9_3xleytyzprlgycb2ded54tx72i:
+    resolution: {integrity: sha512-ezvIDRqsGqndJvDnqDcF9hwbYEJbTKZYU8u8EQDOoJbutEgsZMUndUf0emVBSVu7xLzNTJ6NNbKB3nnvxVvuXA==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -553,8 +553,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001468
-      electron-to-chromium: 1.4.334
+      caniuse-lite: 1.0.30001469
+      electron-to-chromium: 1.4.335
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -563,8 +563,8 @@ packages:
     resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
     dev: false
 
-  /caniuse-lite/1.0.30001468:
-    resolution: {integrity: sha512-zgAo8D5kbOyUcRAgSmgyuvBkjrGk5CGYG5TYgFdpQv+ywcyEpo1LOWoG8YmoflGnh+V+UsNuKYedsoYs0hzV5A==}
+  /caniuse-lite/1.0.30001469:
+    resolution: {integrity: sha512-Rcp7221ScNqQPP3W+lVOYDyjdR6dC+neEQCttoNr5bAyz54AboB4iwpnWgyi8P4YUsPybVzT4LgWiBbI3drL4g==}
     dev: true
 
   /chalk/2.4.2:
@@ -654,8 +654,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /electron-to-chromium/1.4.334:
-    resolution: {integrity: sha512-laZ1odk+TRen6q0GeyQx/JEkpD3iSZT7ewopCpKqg9bTjP1l8XRfU3Bg20CFjNPZkp5+NDBl3iqd4o/kPO+Vew==}
+  /electron-to-chromium/1.4.335:
+    resolution: {integrity: sha512-l/eowQqTnrq3gu+WSrdfkhfNHnPgYqlKAwxz7MTOj6mom19vpEDHNXl6dxDxyTiYuhemydprKr/HCrHfgk+OfQ==}
     dev: true
 
   /esbuild-android-64/0.15.18:
