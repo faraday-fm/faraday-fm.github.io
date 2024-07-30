@@ -10,7 +10,22 @@ export class WebFs implements FileSystemProvider {
   constructor(root: FileSystemDirectoryEntry) {
     this.root = root;
   }
-  async watch(
+  async watchDir(
+    path: string,
+    watcher: FileSystemWatcher,
+    options?: {
+      recursive?: boolean;
+      excludes?: string[];
+      signal?: AbortSignal;
+    }
+  ): Promise<void> {
+    const entries = await this.readDirectory(path);
+    options?.signal?.throwIfAborted();
+    entries.forEach((e) =>
+      watcher([{ type: "created", path: path + "/" + e.name, entry: e }])
+    );
+  }
+  async watchFile(
     path: string,
     watcher: FileSystemWatcher,
     options?: {
@@ -28,7 +43,7 @@ export class WebFs implements FileSystemProvider {
   readDirectory(
     path: string,
     options?: { signal?: AbortSignal }
-  ): FsEntry[] | Promise<FsEntry[]> {
+  ): Promise<FsEntry[]> {
     let resolve: (val: FsEntry[]) => void;
     let reject: (reason?: any) => void;
     const result = new Promise<FsEntry[]>((res, rej) => {
@@ -73,7 +88,7 @@ export class WebFs implements FileSystemProvider {
   createDirectory(
     path: string,
     options?: { signal?: AbortSignal }
-  ): void | Promise<void> {
+  ): Promise<void> {
     throw new Error("Method not implemented.");
   }
   readFile(
@@ -116,30 +131,30 @@ export class WebFs implements FileSystemProvider {
       overwrite?: boolean;
       signal?: AbortSignal;
     }
-  ): void | Promise<void> {
+  ): Promise<void> {
     throw new Error("Method not implemented.");
   }
   delete(
     path: string,
     options?: { recursive?: boolean; signal?: AbortSignal }
-  ): void | Promise<void> {
+  ): Promise<void> {
     throw new Error("Method not implemented.");
   }
   rename(
     oldPath: string,
     newPath: string,
     options?: { overwrite?: boolean; signal?: AbortSignal }
-  ): void | Promise<void> {
+  ): Promise<void> {
     throw new Error("Method not implemented.");
   }
-  copy?(
+  copy(
     source: string,
     destination: string,
     options?: { overwrite?: boolean; signal?: AbortSignal }
-  ): void | Promise<void> {
+  ): Promise<void> {
     throw new Error("Method not implemented.");
   }
-  mount?(path: string, fs: FileSystemProvider): void | Promise<void> {
+  mount(path: string, fs: FileSystemProvider): Promise<void> {
     throw new Error("Method not implemented.");
   }
 }

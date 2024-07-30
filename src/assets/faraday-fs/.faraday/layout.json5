@@ -11,7 +11,7 @@
           id: "panel1",
           type: "file-panel",
           flex: 1.6,
-          path: "file:/",
+          path: "/",
           view: {
             type: "condensed",
             columnDef: { field: "name", name: "Name" },
@@ -27,7 +27,7 @@
           id: "panel2",
           type: "file-panel",
           flex: 1,
-          path: "faraday:/",
+          path: "/",
           view: {
             /*type: "full",
             columnDefs: [

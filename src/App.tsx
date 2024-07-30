@@ -8,12 +8,14 @@ const demoFs = await buildDemoFs();
 demoFs.createDirectory("mount");
 demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
 
+faradayFs.mount('demo', demoFs);
+
 const host: FaradayHost = {
   config: {
     isDesktop: () => false,
   },
   faradayFs,
-  rootFs: demoFs,
+  rootFs: faradayFs,
 };
 
 const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {

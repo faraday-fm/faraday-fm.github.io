@@ -3,7 +3,7 @@
     "identifier": {
       "uuid": "b006fa99ed64"
     },
-    "relativeLocation": "faraday.image-viewer-0.0.1",
+    "relativeLocation": "faraday.image-viewer-0.0.1"
   },
   {
     "identifier": {
@@ -22,5 +22,11 @@
       "uuid": "diaafdsadjf"
     },
     "relativeLocation": "faraday.text-viewer-0.0.1"
+  },
+  {
+    "identifier": {
+      "uuid": "diaafdsadj1"
+    },
+    "relativeLocation": "PKief.material-icon-theme-4.25.0"
   }
 ]
