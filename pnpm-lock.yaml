@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@frdy/web-ui':
-        specifier: ^1.18.0
-        version: 1.18.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.19.0
+        version: 1.19.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@monaco-editor/react':
         specifier: ^4.4.6
         version: 4.6.0(monaco-editor@0.36.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -202,8 +202,8 @@ packages:
     cpu: [loong64]
     os: [linux]
 
-  '@frdy/web-ui@1.18.0':
-    resolution: {integrity: sha512-1xop15752aML43KX/Pf1XOFt9nccxJ3D6O5vP35arNq+gkDN6TBovz12LPqIs+DRXKIt2kz/sNFv7T16NyoKbQ==}
+  '@frdy/web-ui@1.19.0':
+    resolution: {integrity: sha512-/6MKw91cNVFEWAYITmBKMOCLxkJOTlh2ARSbAq7F1xwuXioQhY0SqbgT3bX/BKN/vxN771hwDEpKlZxzduURhw==}
     peerDependencies:
       react: '>=18'
 
@@ -984,7 +984,7 @@ snapshots:
   '@esbuild/linux-loong64@0.15.18':
     optional: true
 
-  '@frdy/web-ui@1.18.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@frdy/web-ui@1.19.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@dhmk/zustand-lens': 3.0.4(zustand@4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1))
       ansi-colors: 4.1.3
