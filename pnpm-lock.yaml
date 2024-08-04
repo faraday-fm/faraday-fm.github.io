@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@frdy/web-ui':
-        specifier: ^1.23.0
-        version: 1.23.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.24.0
+        version: 1.24.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
       '@monaco-editor/react':
         specifier: ^4.6.0
         version: 4.6.0(monaco-editor@0.36.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -170,14 +170,6 @@ packages:
     resolution: {integrity: sha512-LcnxQSsd9aXOIgmmSpvZ/1yo46ra2ESYyqLcryaBZOghxy5qqOBjvCWP5JfkI8yl9rlxRgdLTTMCQQRcN2hdCg==}
     engines: {node: '>=6.9.0'}
 
-  '@dhmk/utils@2.4.2':
-    resolution: {integrity: sha512-xNF77VfjTPocSkgs5LkEvNUHE7fqzKr5B9LllMoCbU8BobRSqwssIwIL/zMM6oiMGZoHyYHOj/XpzLdvULZZ1A==}
-
-  '@dhmk/zustand-lens@3.0.4':
-    resolution: {integrity: sha512-7pf/+EuuLrsNbsDvGluEf39xAO2Zf5MCH6Y15t2RBjGpzCh4oam+d6SuhiI1+VUSrfPNGod0qL7ZFOuO9fQhBA==}
-    peerDependencies:
-      zustand: ^4.0.0
-
   '@emotion/is-prop-valid@1.3.0':
     resolution: {integrity: sha512-SHetuSLvJDzuNbOdtPVbq6yMMMlLoW5Q94uDqJZqy50gcmAjxFkVqmzqSGEFq9gT2iMuIeKV1PXVWmvUhuZLlQ==}
 
@@ -202,8 +194,8 @@ packages:
     cpu: [loong64]
     os: [linux]
 
-  '@frdy/web-ui@1.23.0':
-    resolution: {integrity: sha512-190FUrG1YLW6ncZLowUvngC+FsVx7jupaJJSd34dQgo+6JQQROOg0opzNOh934fNXb6SowJDXlYtHk+Q7FjPHQ==}
+  '@frdy/web-ui@1.24.0':
+    resolution: {integrity: sha512-fRemyANXIZgyiARo2JAx0Y+9uoDLD5S/ks38JxIJ6/8+LOG1qbIcQ1AFE6UWQ58VmqXtjzwQ1jIUVxGW2RibSw==}
     peerDependencies:
       react: '>=18'
 
@@ -711,11 +703,6 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  use-sync-external-store@1.2.0:
-    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
@@ -790,21 +777,6 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
-
-  zustand@4.5.4:
-    resolution: {integrity: sha512-/BPMyLKJPtFEvVL0E9E9BTUM63MNyhPGlvxk1XjrfWTUlV+BR8jufjsovHzrtR6YNcBEcL7cMHovL1n9xHawEg==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0.6'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      immer:
-        optional: true
-      react:
-        optional: true
 
 snapshots:
 
@@ -964,13 +936,6 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@dhmk/utils@2.4.2': {}
-
-  '@dhmk/zustand-lens@3.0.4(zustand@4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1))':
-    dependencies:
-      '@dhmk/utils': 2.4.2
-      zustand: 4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1)
-
   '@emotion/is-prop-valid@1.3.0':
     dependencies:
       '@emotion/memoize': 0.9.0
@@ -987,9 +952,8 @@ snapshots:
   '@esbuild/linux-loong64@0.15.18':
     optional: true
 
-  '@frdy/web-ui@1.23.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
+  '@frdy/web-ui@1.24.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
     dependencies:
-      '@dhmk/zustand-lens': 3.0.4(zustand@4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1))
       ansi-colors: 4.1.3
       deepmerge: 4.3.1
       fast-deep-equal: 3.1.3
@@ -1006,7 +970,6 @@ snapshots:
       xterm-addon-unicode11: 0.6.0(xterm@5.3.0)
       xterm-addon-web-links: 0.9.0(xterm@5.3.0)
       xterm-addon-webgl: 0.16.0(xterm@5.3.0)
-      zustand: 4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - typescript
@@ -1439,10 +1402,6 @@ snapshots:
       escalade: 3.1.2
       picocolors: 1.0.1
 
-  use-sync-external-store@1.2.0(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-
   util-deprecate@1.0.2: {}
 
   uzip-module@1.0.3: {}
@@ -1484,11 +1443,3 @@ snapshots:
   xterm@5.3.0: {}
 
   yallist@3.1.1: {}
-
-  zustand@4.5.4(@types/react@18.3.3)(immer@10.1.1)(react@18.3.1):
-    dependencies:
-      use-sync-external-store: 1.2.0(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.3
-      immer: 10.1.1
-      react: 18.3.1

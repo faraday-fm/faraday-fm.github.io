@@ -27,7 +27,7 @@
           id: "panel2",
           type: "file-panel",
           flex: 1,
-          path: "/",
+          path: "/.faraday/extensions/PKief.material-icon-theme-5.8.0/icons",
           view: {
             /*type: "full",
             columnDefs: [
