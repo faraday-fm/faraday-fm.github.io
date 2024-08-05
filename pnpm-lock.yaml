@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@frdy/web-ui':
-        specifier: ^1.27.0
-        version: 1.27.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.28.0
+        version: 1.28.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
       '@monaco-editor/react':
         specifier: ^4.6.0
         version: 4.6.0(monaco-editor@0.36.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -194,8 +194,8 @@ packages:
     cpu: [loong64]
     os: [linux]
 
-  '@frdy/web-ui@1.27.0':
-    resolution: {integrity: sha512-iMt2xKJeD4H9fepwZOm3cR1dE9bgEztCTl9CTgQG7VR3M4FlfBopGYSnRVROP4rNk1jfR+x34oW3umqUEC40xg==}
+  '@frdy/web-ui@1.28.0':
+    resolution: {integrity: sha512-FTpeXAzHWpogn5IsA9pxNierGDv8kaqvMMgNEEOssQ4Ut1bHXFESaLddeGGoAIWOzGNpicJYjDstsXX6XWqD+w==}
     peerDependencies:
       react: '>=18'
 
@@ -955,7 +955,7 @@ snapshots:
   '@esbuild/linux-loong64@0.15.18':
     optional: true
 
-  '@frdy/web-ui@1.27.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
+  '@frdy/web-ui@1.28.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
     dependencies:
       ansi-colors: 4.1.3
       deepmerge: 4.3.1

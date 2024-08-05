@@ -18,7 +18,7 @@ async function file(
     name,
     AceMask.ACE4_WRITE_DATA,
     Flags.SSH_FXF_CREATE_TRUNCATE,
-    undefined
+    { type: FileType.SSH_FILEXFER_TYPE_UNKNOWN, mtime: Date.now() }
   );
   fs.write(handle, 0, new Uint8Array(content));
 }
