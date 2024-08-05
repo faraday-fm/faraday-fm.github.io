@@ -4,11 +4,11 @@ import { GitHubFs } from "./services/GitHubFs";
 import { WebFs } from "./services/WebFs";
 
 const faradayFs = await buildFaradayFs();
-const demoFs = await buildDemoFs();
-demoFs.createDirectory("mount");
-demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
+// const demoFs = await buildDemoFs();
+// demoFs.createDirectory("mount");
+// demoFs.mount("github", new GitHubFs("faraday-fm", "web-ui"));
 
-faradayFs.mount('demo', demoFs);
+// faradayFs.mount('demo', demoFs);
 
 const host: FaradayHost = {
   config: {
@@ -28,10 +28,10 @@ const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
   if (root && root.isDirectory) {
     e.preventDefault();
     e.stopPropagation();
-    demoFs.mount(
-      "mount/" + root.name,
-      new WebFs(root as FileSystemDirectoryEntry)
-    );
+    // demoFs.mount(
+    //   "mount/" + root.name,
+    //   new WebFs(root as FileSystemDirectoryEntry)
+    // );
   }
 };
 

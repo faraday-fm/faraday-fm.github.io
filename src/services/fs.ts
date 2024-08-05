@@ -1,18 +1,26 @@
 import { FileSystemProvider, InMemoryFsProvider } from "@frdy/web-ui";
 import { unzip } from "unzipit";
 import faradayAppFs from "../assets/faraday.app?zip";
+import { AceMask, FileType, Flags } from "@frdy/web-ui";
 
 const encoder = new TextEncoder();
 
-function dir(fs: FileSystemProvider, name: string) {
-  fs.createDirectory(name);
+async function dir(fs: FileSystemProvider, name: string) {
+  await fs.mkdir(name, { type: FileType.SSH_FILEXFER_TYPE_DIRECTORY });
 }
 
-function file(fs: FileSystemProvider, name: string, content: ArrayBuffer) {
-  fs.writeFile(name, new Uint8Array(content), {
-    create: true,
-    overwrite: false,
-  });
+async function file(
+  fs: FileSystemProvider,
+  name: string,
+  content: ArrayBuffer
+) {
+  const handle = await fs.open(
+    name,
+    AceMask.ACE4_WRITE_DATA,
+    Flags.SSH_FXF_CREATE_TRUNCATE,
+    undefined
+  );
+  fs.write(handle, 0, new Uint8Array(content));
 }
 
 async function buildFromZip(buf: ArrayBuffer) {

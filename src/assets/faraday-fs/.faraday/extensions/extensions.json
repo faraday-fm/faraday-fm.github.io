@@ -17,12 +17,12 @@
     },
     "relativeLocation": "faraday.code-viewer-0.0.1"
   },
-  {
-    "identifier": {
-      "uuid": "diaafdsadjf"
-    },
-    "relativeLocation": "faraday.text-viewer-0.0.1"
-  },
+  // {
+  //   "identifier": {
+  //     "uuid": "diaafdsadjf"
+  //   },
+  //   "relativeLocation": "faraday.text-viewer-0.0.1"
+  // },
   {
     "identifier": {
       "uuid": "diaafdsadj1"
