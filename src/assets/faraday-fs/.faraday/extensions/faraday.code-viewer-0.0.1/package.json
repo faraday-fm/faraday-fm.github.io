@@ -13,8 +13,11 @@
         "id": "code",
         "extensions": [
           ".js",
+          ".cjs",
+          ".mjs",
           ".jsx",
           ".ts",
+          ".mts",
           ".tsx",
           ".json",
           ".json5"
