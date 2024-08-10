@@ -1,0 +1,56 @@
+{
+  "name": "code-viewer",
+  "displayName": "Code Viewer",
+  "publisher": "faraday",
+  "description": "Simple code viewer",
+  "author": "Mikhail Isupov",
+  "version": "1.2.2",
+  "license": "MIT",
+  "private": true,
+  "categories": [
+    "QuickView"
+  ],
+  "keywords": [
+    "quickview",
+    "text"
+  ],
+  "type": "module",
+  "contributes": {
+    "quickViews": [
+      {
+        "id": "code",
+        "extensions": [
+          ".md",
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".cjs",
+          ".mjs",
+          ".mts",
+          ".json",
+          ".jsonc",
+          ".json5",
+          "css",
+          "sql"
+        ],
+        "mimetypes": [
+          "text/javascript",
+          "application/javascript",
+          "application/x-javascript",
+          "text/ecmascript",
+          "application/ecmascript",
+          "application/json",
+          "application/x-json",
+          "application/manifest+json",
+          "application/ld+json",
+          "text/typescript",
+          "application/typescript",
+          "text/jsx",
+          "text/typescript-jsx"
+        ],
+        "path": "./dist/code-viewer.js"
+      }
+    ]
+  }
+}
