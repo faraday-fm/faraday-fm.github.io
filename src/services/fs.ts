@@ -1,8 +1,7 @@
-import { FileSystemProvider } from "@frdy/web-ui";
 import { unzip } from "unzipit";
 import faradayAppFs from "../assets/faraday.app?zip";
-import { AceMask, FileType, Flags } from "@frdy/web-ui";
-import { InMemoryFsProvider } from "./inMemoryFs";
+import { MemoryFsProvider } from "@frdy/memory-fs";
+import { AceMask, FileType, Flags, type FileSystemProvider } from "@frdy/sdk";
 
 async function dir(fs: FileSystemProvider, name: string, lastModDate: Date) {
   await fs.mkdir(name, {
@@ -27,15 +26,13 @@ async function file(
 }
 
 async function buildFromZip(buf: ArrayBuffer) {
-  const fs = new InMemoryFsProvider();
+  const fs = new MemoryFsProvider();
   const zip = await unzip(buf);
   for (const [name, e] of Object.entries(zip.entries)) {
     if (e.isDirectory) {
-      // console.info(name.substring(0, name.length - 1));
       dir(fs, name.substring(0, name.length - 1), e.lastModDate);
     } else {
       const text = await e.arrayBuffer();
-      // console.info("FILE", name, text);
       file(fs, name, e.lastModDate, text);
     }
   }

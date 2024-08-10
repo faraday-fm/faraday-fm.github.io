@@ -1,0 +1,38 @@
+{
+  "name": "image-viewer",
+  "displayName": "Image Viewer",
+  "publisher": "faraday",
+  "description": "Simple image viewer",
+  "author": "Mikhail Isupov",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "categories": ["QuickView"],
+  "keywords": ["quickview", "text"],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@frdy/sdk": "workspace:*",
+    "preact": "^10.23.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
+  },
+  "contributes": {
+    "quickViews": [
+      {
+        "id": "image",
+        "extensions": [".apng", ".avif", ".gif", ".jpg", ".jpeg", ".jfif", ".pjpeg", ".pjp", ".png", ".svg", ".webp", ".bmp", ".ico"],
+        "mimetypes": ["image/apng", "image/avif", "image/gif", "image/jpeg", "image/png", "image/svg+xml", "image/webp", "image/bmp", "image/x-icon"],
+
+        "path": "./dist/image-viewer.js"
+      }
+    ]
+  }
+}

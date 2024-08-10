@@ -1,7 +1,7 @@
-import { Plugin } from "vite";
-import JSZip from "jszip";
 import fs from "node:fs";
 import path from "node:path";
+import JSZip from "jszip";
+import type { Plugin } from "vite";
 
 export function zipFolderPlugin(): Plugin {
   const buildZip = (dir: string, zip: JSZip) => {
@@ -15,6 +15,7 @@ export function zipFolderPlugin(): Plugin {
       }
     });
   };
+
   return {
     name: "zip-folder",
     async resolveId(source, importer) {
@@ -34,6 +35,7 @@ export function zipFolderPlugin(): Plugin {
         });
         return {
           code: `export default fetch("data:application/octet-binary;base64,${res}").then(res => res.arrayBuffer());`,
+          map: { mappings: "" },
         };
       }
     },

@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     // "types": ["node"]
   },
-  "include": ["vite.config.ts", "zipFolderPlugin.ts", "package.json"]
+  "include": ["vite.config.ts", "scripts/zipFolderPlugin.ts", "package.json"]
 }
