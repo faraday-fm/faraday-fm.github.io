@@ -9,15 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@frdy/memory-fs": "^1.34.1",
+    "@frdy/memory-fs": "^1.34.2",
     "@frdy/sdk": "^1.4.0",
-    "@frdy/web-ui": "^1.37.1",
+    "@frdy/web-ui": "^1.38.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "unzipit": "^1.4.3"
   },
   "devDependencies": {
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "~4.3.1",

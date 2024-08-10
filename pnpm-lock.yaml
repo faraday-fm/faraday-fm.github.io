@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@frdy/memory-fs':
-        specifier: ^1.34.1
-        version: 1.34.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.34.2
+        version: 1.34.2(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
       '@frdy/sdk':
         specifier: ^1.4.0
         version: 1.4.0
       '@frdy/web-ui':
-        specifier: ^1.37.1
-        version: 1.37.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.38.0
+        version: 1.38.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -28,7 +28,7 @@ importers:
         version: 1.4.3
     devDependencies:
       '@types/node':
-        specifier: ^22.1.0
+        specifier: ^22.2.0
         version: 22.2.0
       '@types/react':
         specifier: ^18.3.3
@@ -283,19 +283,19 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@frdy/memory-fs@1.34.1':
-    resolution: {integrity: sha512-3CQDtRkxlHiLg/uLNXio79oPaG+LgwTUHVNx9cozPFNRGATZsDpkNUw8zSK6N8CF1XHrSsDnJK1ycxUj88LKxw==}
+  '@frdy/memory-fs@1.34.2':
+    resolution: {integrity: sha512-3m6AIEvLAdUM8LnPMuD9dg4+Ht+xrtoCWSrO1ugJpwufSuxCH6wJ1fPmavBRQkEDX12J5HCD9PbABCoZCEESzQ==}
 
   '@frdy/sdk@1.4.0':
     resolution: {integrity: sha512-vCd8sjLrhwncsJyTt4G5z0wS2j3qH9bG5+HmCqNw4DlD1CLFvm4yeiqScaL/jL/99pdOoXioMsWAl6kTzRIdRw==}
 
-  '@frdy/web-ui@1.37.1':
-    resolution: {integrity: sha512-mKyT7+DUgNlRefiAkgPd2MLqi0MisbKmkjEbH5RiP8tXaY8EqrWpSfbhtEHUxxJb6wbZ7vGsLt5/7K/4SPnzzw==}
+  '@frdy/web-ui@1.38.0':
+    resolution: {integrity: sha512-iDIcAlxW7/kX1VLMExAub1S3PklOZS5i8fRrGV3X0LFB8kw0oTsUrp8p6QT8ZvJ47byALeLwpjG/Se66LsYAeA==}
     peerDependencies:
       react: '>=18'
 
-  '@frdy/webview-host@0.5.0':
-    resolution: {integrity: sha512-LLOuDu3IYoMviD4ZXw7rc98a2CINjDxuA3AzAGyQMR3xkJAssebpL42295UJnZGs68o/PFNKN3UCI3j5JUGPhw==}
+  '@frdy/webview-host@0.6.0':
+    resolution: {integrity: sha512-h4TEhyZUEwt+qtn+4XbHouDBKDPco+gCgE6yciPB5CiK5hxPGB5kl4EIPyzk4MFm88srBgJD2MOQbvYqDiUUVg==}
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
@@ -971,10 +971,10 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@frdy/memory-fs@1.34.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
+  '@frdy/memory-fs@1.34.2(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
     dependencies:
       '@frdy/sdk': 1.4.0
-      '@frdy/web-ui': 1.37.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
+      '@frdy/web-ui': 1.38.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)
       synchronous-promise: 2.0.17
     transitivePeerDependencies:
       - '@types/react'
@@ -983,10 +983,10 @@ snapshots:
 
   '@frdy/sdk@1.4.0': {}
 
-  '@frdy/web-ui@1.37.1(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
+  '@frdy/web-ui@1.38.0(@types/react@18.3.3)(react@18.3.1)(typescript@5.5.4)':
     dependencies:
       '@frdy/sdk': 1.4.0
-      '@frdy/webview-host': 0.5.0
+      '@frdy/webview-host': 0.6.0
       '@xterm/addon-fit': 0.10.0(@xterm/xterm@5.5.0)
       '@xterm/addon-unicode11': 0.8.0(@xterm/xterm@5.5.0)
       '@xterm/addon-web-links': 0.11.0(@xterm/xterm@5.5.0)
@@ -1008,7 +1008,7 @@ snapshots:
       - '@types/react'
       - typescript
 
-  '@frdy/webview-host@0.5.0':
+  '@frdy/webview-host@0.6.0':
     dependencies:
       '@frdy/sdk': 1.4.0
       comlink: 4.4.1
