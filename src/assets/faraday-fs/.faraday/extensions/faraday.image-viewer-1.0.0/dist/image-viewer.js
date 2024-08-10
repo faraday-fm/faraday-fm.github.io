@@ -1,44 +1,44 @@
-var g = 1048576;
-function u(t, a, e) {
-  let r, i = 0;
+var d = 1048576;
+function f(t, n, e) {
+  let a, c = 0;
   return new ReadableStream({
     async start() {
-      r = await t.open(a, 1, 2, void 0, { signal: e });
+      a = await t.open(n, 1, 2, void 0, { signal: e });
     },
-    async pull(n) {
+    async pull(r) {
       try {
-        const c = await t.read(r, i, g, { signal: e });
-        i += g, c.byteLength > 0 ? n.enqueue(c) : n.close();
+        const i = await t.read(a, c, d, { signal: e });
+        c += d, i.byteLength > 0 ? r.enqueue(i) : r.close();
       } catch {
-        n.close();
+        r.close();
       }
     },
     async cancel() {
-      t.close(r);
+      t.close(a);
     }
   });
 }
-async function m(t) {
-  const a = t.getReader(), e = [];
-  let r = 0;
+async function u(t) {
+  const n = t.getReader(), e = [];
+  let a = 0;
   for (; ; ) {
-    const { done: n, value: c } = await a.read();
-    if (n)
+    const { done: r, value: i } = await n.read();
+    if (r)
       break;
-    c && (e.push(c), r += c.length);
+    i && (e.push(i), a += i.length);
   }
-  const i = new Uint8Array(r);
+  const c = new Uint8Array(a);
   let o = 0;
-  for (const n of e)
-    i.set(n, o), o += n.length;
-  return i;
+  for (const r of e)
+    c.set(r, o), o += r.length;
+  return c;
 }
-async function d(t, a) {
-  const e = u(faraday.fs, t, a == null ? void 0 : a.signal);
-  return m(e);
+async function p(t, n) {
+  const e = f(faraday.fs, t, n == null ? void 0 : n.signal);
+  return u(e);
 }
 const s = document.getElementById("root");
-function y(t) {
+function m(t) {
   switch (t.split(".").at(-1)) {
     case "apng":
       return "image/apng";
@@ -67,21 +67,23 @@ function y(t) {
   }
 }
 let l;
-const f = async (t) => {
-  const a = await d(t), e = document.createElement("img");
-  e.style.width = "100%", e.style.height = "100%", e.style.objectFit = "contain", e.style.position = "absolute", e.style.top = "50%", e.style.left = "50%", e.style.transform = "translate(-50%, -50%)", l = URL.createObjectURL(new Blob([a.buffer], { type: y(t) })), e.src = l, e.onload = () => {
+const g = async (t) => {
+  const n = await p(t), e = document.createElement("img");
+  e.style.width = "100%", e.style.height = "100%", e.style.objectFit = "contain", e.style.position = "absolute", e.style.top = "50%", e.style.left = "50%", e.style.transform = "translate(-50%, -50%)";
+  const a = `color-mix(in srgb, transparent, ${faraday.theme.colors["panel.foreground"]} 5%)`;
+  e.style.backgroundImage = `linear-gradient(45deg, ${a} 25%, transparent 25%), linear-gradient(-45deg, ${a} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, ${a} 75%), linear-gradient(-45deg, transparent 75%, ${a} 75%)`, e.style.backgroundSize = "20px 20px", e.style.backgroundPosition = "0 0, 0 10px, 10px -10px, -10px 0px", l = URL.createObjectURL(new Blob([n.buffer], { type: m(t) })), e.src = l, e.onload = () => {
     s.innerHTML = "", s.appendChild(e);
   }, e.onerror = () => {
     s.innerHTML = "Cannot load the image.";
   };
 };
-function p() {
-  console.info("Image Viewer Activated"), faraday.events.on("activefilechange", f), faraday.activefile && f(faraday.activefile);
+function y() {
+  console.info("Image Viewer Activated"), faraday.events.on("activefilechange", g), faraday.activefile && g(faraday.activefile);
 }
 function v() {
-  console.info("Image Viewer Deactivated"), faraday.events.off("activefilechange", f), s.innerHTML = "", URL.revokeObjectURL(l);
+  console.info("Image Viewer Deactivated"), faraday.events.off("activefilechange", g), s.innerHTML = "", URL.revokeObjectURL(l);
 }
 export {
-  p as activate,
+  y as activate,
   v as deactivate
 };

@@ -4,11 +4,16 @@
   "publisher": "faraday",
   "description": "Simple image viewer",
   "author": "Mikhail Isupov",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
-  "categories": ["QuickView"],
-  "keywords": ["quickview", "text"],
+  "categories": [
+    "QuickView"
+  ],
+  "keywords": [
+    "quickview",
+    "text"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,9 +33,32 @@
     "quickViews": [
       {
         "id": "image",
-        "extensions": [".apng", ".avif", ".gif", ".jpg", ".jpeg", ".jfif", ".pjpeg", ".pjp", ".png", ".svg", ".webp", ".bmp", ".ico"],
-        "mimetypes": ["image/apng", "image/avif", "image/gif", "image/jpeg", "image/png", "image/svg+xml", "image/webp", "image/bmp", "image/x-icon"],
-
+        "extensions": [
+          ".apng",
+          ".avif",
+          ".gif",
+          ".jpg",
+          ".jpeg",
+          ".jfif",
+          ".pjpeg",
+          ".pjp",
+          ".png",
+          ".svg",
+          ".webp",
+          ".bmp",
+          ".ico"
+        ],
+        "mimetypes": [
+          "image/apng",
+          "image/avif",
+          "image/gif",
+          "image/jpeg",
+          "image/png",
+          "image/svg+xml",
+          "image/webp",
+          "image/bmp",
+          "image/x-icon"
+        ],
         "path": "./dist/image-viewer.js"
       }
     ]
